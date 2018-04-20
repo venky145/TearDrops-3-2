@@ -10,10 +10,18 @@ import UIKit
 import AVKit
 
 class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegate,PenviewDelegate {
-
-    @IBOutlet weak var headingImage: UIImageView!
-    @IBOutlet weak var eyeImage: UIImageView!
-    @IBOutlet weak var contentImage: UIImageView!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view5: UIView!
+    @IBOutlet weak var view6: UIView!
+    @IBOutlet weak var view7: UIView!
+    @IBOutlet weak var view8: UIView!
+    @IBOutlet weak var view9: UIView!
+    @IBOutlet weak var view10: UIView!
+    @IBOutlet weak var view11: UIView!
+    
     let playerController = AVPlayerViewController()
     
     @IBAction func firstAction(_ sender: UIButton) {
@@ -98,6 +106,20 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
     override func viewWillAppear(_ animated: Bool) {
         googleAnalyticsTrackingWith(trackingName: "Tear Drops Dry Eye Incidence")
         
+        view1.alpha = 1
+        view2.alpha = 1
+        view3.alpha = 1
+        view4.alpha = 1
+        view5.alpha = 1
+        view6.alpha = 1
+        view7.alpha = 1
+        view8.alpha = 1
+        view9.alpha = 1
+        view10.alpha = 1
+        view11.alpha = 1
+        
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(animateViews), userInfo: nil, repeats: false)
+        
         if teardropvid == 0 {
             self.playVideo()
             teardropvid = 1
@@ -105,22 +127,51 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
         }else {
             self.playerController.dismiss(animated: true)
         }
-        self.contentImage.alpha = 0
-        self.eyeImage.alpha = 0
-        
-        let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
-        let prevRect = self.headingImage.frame
-        self.headingImage.frame = rect
-        UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseIn, animations: {
-            self.headingImage.frame = prevRect
+    }
+    
+    @objc func animateViews() {
+        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+            self.view1.alpha = 0
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.eyeImage.alpha = 1
+                self.view2.alpha = 0
             }) { (finished:Bool) in
                 UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                    self.contentImage.alpha = 1
+                    self.view3.alpha = 0
                 }) { (finished:Bool) in
-                    
+                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.view4.alpha = 0
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.view5.alpha = 0
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.view6.alpha = 0
+                            }) { (finished:Bool) in
+                                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                    self.view7.alpha = 0
+                                }) { (finished:Bool) in
+                                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                        self.view8.alpha = 0
+                                    }) { (finished:Bool) in
+                                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                            self.view9.alpha = 0
+                                        }) { (finished:Bool) in
+                                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                                self.view10.alpha = 0
+                                            }) { (finished:Bool) in
+                                                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                                    self.view11.alpha = 0
+                                                }) { (finished:Bool) in
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -10,9 +10,14 @@ import UIKit
 
 class GTears_ThirdViewController: UIViewController,PenviewDelegate {
 
-    @IBOutlet weak var botom: UIImageView!
-    @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var contentImage: UIImageView!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view5: UIView!
+    @IBOutlet weak var view6: UIView!
+    @IBOutlet weak var view7: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let rightSwipe = UISwipeGestureRecognizer(target: self, action:#selector(moveToPrevious(gestureRecg:)) )
@@ -27,20 +32,45 @@ class GTears_ThirdViewController: UIViewController,PenviewDelegate {
         
         googleAnalyticsTrackingWith(trackingName: "Glytears Computer Vision Syndrome")
         
-        self.contentImage.alpha = 0
-        self.botom.alpha = 0
+        view1.alpha = 1
+        view2.alpha = 1
+        view3.alpha = 1
+        view4.alpha = 1
+        view5.alpha = 1
+        view6.alpha = 1
+        view7.alpha = 1
         
-        let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
-        let prevRect = self.logoImage.frame
-        self.logoImage.frame = rect
-        UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseIn, animations: {
-            self.logoImage.frame = prevRect
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(animateViews), userInfo: nil, repeats: false)
+    }
+    
+    @objc func animateViews() {
+        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+            self.view1.alpha = 0
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.contentImage.alpha = 1
-                self.botom.alpha = 1
+                self.view2.alpha = 0
             }) { (finished:Bool) in
-                
+                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                    self.view3.alpha = 0
+                }) { (finished:Bool) in
+                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.view4.alpha = 0
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.view5.alpha = 0
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.view6.alpha = 0
+                            }) { (finished:Bool) in
+                                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                    self.view7.alpha = 0
+                                }) { (finished:Bool) in
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
