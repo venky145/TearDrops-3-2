@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     let vcHandler = GlobalClass.shared
     let playerController = AVPlayerViewController()
+    var isVideo = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,12 @@ class ViewController: UIViewController {
         isSequence = false
         teardropvid = 0
         normovid = 0
-        print(teardropvid)
+        
+        if isVideo{
+            moveToController()
+        }else{
+            vcHandler.selectionArray.removeAll()
+        }
     }
     
     
@@ -409,22 +415,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submitAction(_ sender: Any) {
-       // playVideo(videoUrl: "Division Opener")
+        
         
         if vcHandler.selectionArray.count > 0 {
-        let initialVC = vcHandler.selectionArray[0]
-        moveToViewController(nextVC: initialVC,for: self)
+            playVideo(videoUrl: "Division Opener")
+//        let initialVC = vcHandler.selectionArray[0]
+//        moveToViewController(nextVC: initialVC,for: self)
         }
     }
     
     func playVideo(videoUrl:String){
+        
         guard let path = Bundle.main.path(forResource: videoUrl, ofType:"mp4") else {
             debugPrint("video.m4v not found")
             return
         }
+        isVideo = true
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         playerController.player = player
-        playerController.showsPlaybackControls = false
+        playerController.showsPlaybackControls = true
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player?.currentItem)
         present(playerController, animated: true) {
             player.play()
@@ -434,8 +443,13 @@ class ViewController: UIViewController {
     @objc func playerDidFinishPlaying(note: NSNotification) {
         self.playerController.dismiss(animated: true)
         isSequence = false
+        moveToController()
+    }
+    
+    func moveToController(){
         let initialVC = vcHandler.selectionArray[0]
         moveToViewController(nextVC: initialVC,for: self)
+        isVideo = false
     }
     
     override func didReceiveMemoryWarning() {

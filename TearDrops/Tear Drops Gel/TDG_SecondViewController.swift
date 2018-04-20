@@ -56,7 +56,7 @@ class TDG_SecondViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome DED Symptoms")
         self.content.alpha = 0
         
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)

@@ -27,6 +27,8 @@ class NT_SecondViewController: UIViewController,PenviewDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Normo Tears Post LASIK Surgery")
+        
         self.contentImage.alpha = 0
         
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
@@ -71,7 +73,7 @@ class NT_SecondViewController: UIViewController,PenviewDelegate {
 
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

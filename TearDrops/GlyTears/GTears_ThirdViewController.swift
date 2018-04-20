@@ -25,6 +25,8 @@ class GTears_ThirdViewController: UIViewController,PenviewDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Glytears Computer Vision Syndrome")
+        
         self.contentImage.alpha = 0
         self.botom.alpha = 0
         
@@ -70,7 +72,7 @@ class GTears_ThirdViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

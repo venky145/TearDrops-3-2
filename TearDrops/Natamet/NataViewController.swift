@@ -25,7 +25,7 @@ class NataViewController: UIViewController,PenviewDelegate {
                 self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Natamet USFDA Approved Formulation")
         self.contentImage.alpha = 0
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.logoImage.frame

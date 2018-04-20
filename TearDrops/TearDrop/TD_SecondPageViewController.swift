@@ -14,7 +14,7 @@ class TD_SecondPageViewController: UIViewController,PenviewDelegate {
     
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
@@ -53,6 +53,8 @@ class TD_SecondPageViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Mild Moderate Dry Eyes")
+        
         self.contentImage.alpha = 0
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.headingImage.frame

@@ -26,6 +26,8 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Glytears Cheerful Dry Eyes Teaser")
+        
         
 //        self.mainImage.alpha = 0
         
@@ -76,7 +78,7 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+       moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

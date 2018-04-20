@@ -37,7 +37,7 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
@@ -86,7 +86,7 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         playerController.player = player
         playerController.delegate = self
-        playerController.showsPlaybackControls = false
+        playerController.showsPlaybackControls = true
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player?.currentItem)
         present(playerController, animated: true) {
             player.play()
@@ -96,6 +96,8 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
         self.playerController.dismiss(animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Dry Eye Incidence")
+        
         if teardropvid == 0 {
             self.playVideo()
             teardropvid = 1
@@ -173,6 +175,19 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
         currentVC.navigationController?.view.layer.add(dismissTransition(animationType: "pageCurl"), forKey: kCATransition)
 //    currentVC.navigationController?.popToViewController((currentVC.navigationController?.viewControllers[index])!, animated: true)
         currentVC.navigationController?.popViewController(animated: true)
+    }
+
+    func moveToHome(currentVC:UIViewController){
+        currentVC.navigationController?.view.layer.add(dismissTransition(animationType: "pageCurl"), forKey: kCATransition)
+         currentVC.navigationController?.popToViewController((currentVC.navigationController?.viewControllers[0])!, animated: true)
+    }
+
+    public func googleAnalyticsTrackingWith(trackingName:String){
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: trackingName)
+    
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
     }
 
 public func presentReferenceView(currentVC:UIViewController,image:UIImage,with closeButton:UIImage){

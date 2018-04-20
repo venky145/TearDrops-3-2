@@ -14,7 +14,7 @@ class LProst_FirstViewController: UIViewController,PenviewDelegate {
     @IBOutlet weak var contentImage: UIImageView!
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
@@ -54,7 +54,7 @@ class LProst_FirstViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Latoprost RT Glaucoma SMM Technology")
         self.contentImage.alpha = 0
         
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)

@@ -28,7 +28,7 @@ class BRIMO_FourthViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Brimolol Post Operative IOP Spike")
         self.contentImage.alpha = 0
         self.contentImage2.alpha = 0
          self.subHead.alpha = 0
@@ -90,7 +90,7 @@ class BRIMO_FourthViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+       moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

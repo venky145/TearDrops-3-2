@@ -25,7 +25,7 @@ class MDEX_FirstViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Milflodex Avoid BKC in Post Surgical Care")
         self.contentImage.alpha = 1
         
 //        UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseIn, animations: {
@@ -75,7 +75,7 @@ class MDEX_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
