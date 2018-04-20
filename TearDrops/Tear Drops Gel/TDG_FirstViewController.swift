@@ -12,6 +12,11 @@ class TDG_FirstViewController: UIViewController,PenviewDelegate {
 let playerController = AVPlayerViewController()
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var content: UIImageView!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view5: UIView!
     
     @IBAction func homeAction(_ sender: Any) {
         moveToPreviousViewController(currentVC: self, at: 0)
@@ -56,18 +61,40 @@ let playerController = AVPlayerViewController()
     
     override func viewWillAppear(_ animated: Bool) {
         googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome DED Symptoms")
-        self.content.alpha = 0
         
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.logo.frame
         self.logo.frame = rect
+        
+        view1.alpha = 1
+        view2.alpha = 1
+        view3.alpha = 1
+        view4.alpha = 1
+        view5.alpha = 1
+        
         UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseIn, animations: {
             self.logo.frame = prevRect
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.content.alpha = 1
+                self.view1.alpha = 0
             }) { (finished:Bool) in
-                
+                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                    self.view2.alpha = 0
+                }) { (finished:Bool) in
+                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.view3.alpha = 0
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.view4.alpha = 0
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.view5.alpha = 0
+                            }) { (finished:Bool) in
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
     }
