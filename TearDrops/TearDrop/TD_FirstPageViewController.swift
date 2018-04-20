@@ -171,7 +171,8 @@ class TD_FirstPageViewController: UIViewController,AVPlayerViewControllerDelegat
     }
     public func moveToPreviousViewController(currentVC:UIViewController,at index:Int){
         currentVC.navigationController?.view.layer.add(dismissTransition(animationType: "pageCurl"), forKey: kCATransition)
-    currentVC.navigationController?.popToViewController((currentVC.navigationController?.viewControllers[index])!, animated: true)
+//    currentVC.navigationController?.popToViewController((currentVC.navigationController?.viewControllers[index])!, animated: true)
+        currentVC.navigationController?.popViewController(animated: true)
     }
 
 public func presentReferenceView(currentVC:UIViewController,image:UIImage,with closeButton:UIImage){
