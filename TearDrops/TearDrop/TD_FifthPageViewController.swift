@@ -10,8 +10,13 @@ import UIKit
 
 class TD_FifthPageViewController: UIViewController,PenviewDelegate {
     
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var content: UIImageView!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view5: UIView!
+    @IBOutlet weak var view6: UIView!
+    @IBOutlet weak var view7: UIView!
     
     @IBAction func homeAction(_ sender: Any) {
         moveToHome(currentVC:self)
@@ -58,17 +63,45 @@ class TD_FifthPageViewController: UIViewController,PenviewDelegate {
         
         googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome DED Symptoms")
         
-        self.content.alpha = 0
-        let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
-        let prevRect = self.logo.frame
-        self.logo.frame = rect
-        UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseIn, animations: {
-            self.logo.frame = prevRect
+        view1.alpha = 1
+        view2.alpha = 1
+        view3.alpha = 1
+        view4.alpha = 1
+        view5.alpha = 1
+        view6.alpha = 1
+        view7.alpha = 1
+        
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(animateViews), userInfo: nil, repeats: false)
+    }
+    
+    @objc func animateViews() {
+        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+            self.view1.alpha = 0
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.content.alpha = 1
+                self.view2.alpha = 0
             }) { (finished:Bool) in
-                
+                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                    self.view3.alpha = 0
+                }) { (finished:Bool) in
+                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.view4.alpha = 0
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.view5.alpha = 0
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.view6.alpha = 0
+                            }) { (finished:Bool) in
+                                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                    self.view7.alpha = 0
+                                }) { (finished:Bool) in
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
