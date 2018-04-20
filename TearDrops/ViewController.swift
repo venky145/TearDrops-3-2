@@ -80,18 +80,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func LatoprostAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Latoprost").instantiateViewController(withIdentifier: "LProst_VideoViewController") as! LProst_VideoViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is LProst_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+           let newViewController = setupStoryBoard(storyBoardName: "Latoprost").instantiateViewController(withIdentifier: "LProst_VideoViewController") as! LProst_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -100,18 +103,21 @@ class ViewController: UIViewController {
     
     @IBAction func latoComAction(_ sender: Any) {
         
-        let newViewController = setupStoryBoard(storyBoardName: "Latocom").instantiateViewController(withIdentifier: "LCOM_FirstViewController") as! LCOM_FirstViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is LCOM_FirstViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Latocom").instantiateViewController(withIdentifier: "LCOM_FirstViewController") as! LCOM_FirstViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
