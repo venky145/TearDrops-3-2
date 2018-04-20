@@ -305,54 +305,64 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func gloEyeAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Gloeye").instantiateViewController(withIdentifier: "GEye_VideoViewController") as! GEye_VideoViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is GEye_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+           let newViewController = setupStoryBoard(storyBoardName: "Gloeye").instantiateViewController(withIdentifier: "GEye_VideoViewController") as! GEye_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
         }
+
     }
     @IBAction func glyTearsAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "GlyTears").instantiateViewController(withIdentifier: "GTears_FirstViewController") as! GTears_FirstViewController
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is GTears_FirstViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "GlyTears").instantiateViewController(withIdentifier: "GTears_FirstViewController") as! GTears_FirstViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
         }
+        
     }
     @IBAction func normoTearsAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "NormoTears").instantiateViewController(withIdentifier: "NT_FirstViewController") as! NT_FirstViewController
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
+        
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
-            }
+                for controller in vcHandler.selectionArray
+                {
+                    if controller is NT_FirstViewController
+                    {
+                        vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                        button.backgroundColor = UIColor.clear
+                    }
+                }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "NormoTears").instantiateViewController(withIdentifier: "NT_FirstViewController") as! NT_FirstViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)

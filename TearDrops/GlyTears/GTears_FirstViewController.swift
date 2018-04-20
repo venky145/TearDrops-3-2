@@ -25,8 +25,7 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let jermyGif = UIImage.gifImageWithName(name: "water")
-        self.mainImage.image = jermyGif
+        
         
 //        self.mainImage.alpha = 0
         
@@ -34,6 +33,14 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
             self.mainImage.alpha = 1
         }) { (finished:Bool) in
         }*/
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            let jermyGif = UIImage.gifImageWithName(name: "water")
+            self.mainImage.image = jermyGif
+        }
+       
     }
     
     @objc func moveToNext(gestureRecg:UISwipeGestureRecognizer){
