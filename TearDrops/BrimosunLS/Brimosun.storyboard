@@ -22,11 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLS_BG" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-uz-VXe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bRIM_LS_1" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-uz-VXe">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLS_Content" translatesAutoresizingMaskIntoConstraints="NO" id="KhN-5h-eby">
-                                <rect key="frame" x="91" y="271" width="913" height="492"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="s38-eC-aNn">
                                 <rect key="frame" x="10" y="10" width="172" height="50"/>
@@ -69,37 +66,66 @@
                                     <constraint firstAttribute="height" constant="50" id="gYn-oI-nDz"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLS_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-vO-NIa">
-                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-A8-2Sa">
+                                <rect key="frame" x="225" y="28" width="579" height="166"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="zXs-Bp-pAQ"/>
+                                    <constraint firstAttribute="height" constant="166" id="LJe-2f-ibi"/>
+                                    <constraint firstAttribute="width" constant="579" id="dLZ-PF-A7p"/>
                                 </constraints>
-                            </imageView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6Y-Xu-Z9j">
+                                <rect key="frame" x="69" y="282" width="532" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="bE1-4Z-wtP"/>
+                                    <constraint firstAttribute="width" constant="532" id="uL6-ou-zYx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAy-28-BWH">
+                                <rect key="frame" x="564" y="399" width="460" height="157"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="KdN-EQ-qPZ"/>
+                                    <constraint firstAttribute="width" constant="460" id="sAE-Dv-Yzf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-Xr-w8A">
+                                <rect key="frame" x="611" y="632" width="413" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="413" id="49V-d3-eMn"/>
+                                    <constraint firstAttribute="height" constant="128" id="eOH-hw-eMO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oyA-vO-NIa" firstAttribute="top" secondItem="9e2-As-MrR" secondAttribute="bottom" constant="39" id="3Ps-bI-SnI"/>
-                            <constraint firstItem="oyA-vO-NIa" firstAttribute="centerX" secondItem="edm-gg-UiK" secondAttribute="centerX" id="7fR-UI-UGO"/>
+                            <constraint firstItem="P6Y-Xu-Z9j" firstAttribute="leading" secondItem="9Os-i7-TdL" secondAttribute="leading" constant="69" id="2tQ-ZJ-XZL"/>
+                            <constraint firstItem="P6Y-Xu-Z9j" firstAttribute="top" secondItem="u3a-A8-2Sa" secondAttribute="bottom" constant="88" id="4uB-ix-jmr"/>
+                            <constraint firstItem="fAy-28-BWH" firstAttribute="trailing" secondItem="9Os-i7-TdL" secondAttribute="trailing" id="6aJ-3T-eNe"/>
                             <constraint firstItem="s38-eC-aNn" firstAttribute="top" secondItem="edm-gg-UiK" secondAttribute="top" constant="10" id="8SS-gW-WTd"/>
-                            <constraint firstAttribute="trailing" secondItem="oyA-vO-NIa" secondAttribute="trailing" constant="243" id="CFJ-ha-mAv"/>
-                            <constraint firstAttribute="trailing" secondItem="KhN-5h-eby" secondAttribute="trailing" constant="20" id="GaF-1T-3df"/>
-                            <constraint firstItem="KhN-5h-eby" firstAttribute="leading" secondItem="edm-gg-UiK" secondAttribute="leading" constant="91" id="RSm-WH-lKL"/>
-                            <constraint firstItem="oUP-it-2e3" firstAttribute="top" secondItem="KhN-5h-eby" secondAttribute="bottom" constant="5" id="TOO-cl-edu"/>
+                            <constraint firstItem="9Os-i7-TdL" firstAttribute="trailing" secondItem="u3a-A8-2Sa" secondAttribute="trailing" constant="220" id="AbY-Ya-ef0"/>
+                            <constraint firstItem="u3a-A8-2Sa" firstAttribute="leading" secondItem="s38-eC-aNn" secondAttribute="trailing" constant="43" id="SVR-Ee-l2u"/>
+                            <constraint firstItem="oUP-it-2e3" firstAttribute="top" secondItem="fAy-28-BWH" secondAttribute="bottom" constant="212" id="Twq-gp-Mzt"/>
                             <constraint firstItem="s38-eC-aNn" firstAttribute="leading" secondItem="edm-gg-UiK" secondAttribute="leading" constant="10" id="V4t-Ts-tyK"/>
                             <constraint firstItem="iIs-uz-VXe" firstAttribute="width" secondItem="edm-gg-UiK" secondAttribute="width" id="VS5-DP-Ben"/>
-                            <constraint firstItem="KhN-5h-eby" firstAttribute="top" secondItem="oyA-vO-NIa" secondAttribute="bottom" constant="35" id="hju-iu-bMp"/>
+                            <constraint firstItem="u3a-A8-2Sa" firstAttribute="top" secondItem="9e2-As-MrR" secondAttribute="bottom" constant="8" id="b4u-Pu-6bi"/>
                             <constraint firstItem="iIs-uz-VXe" firstAttribute="centerY" secondItem="edm-gg-UiK" secondAttribute="centerY" id="m8U-GO-RjR"/>
                             <constraint firstItem="iIs-uz-VXe" firstAttribute="centerX" secondItem="edm-gg-UiK" secondAttribute="centerX" id="mJ6-ka-vXN"/>
                             <constraint firstItem="iIs-uz-VXe" firstAttribute="height" secondItem="edm-gg-UiK" secondAttribute="height" id="qr6-c8-vfm"/>
-                            <constraint firstItem="oyA-vO-NIa" firstAttribute="leading" secondItem="s38-eC-aNn" secondAttribute="trailing" constant="61" id="s4G-WV-ld5"/>
+                            <constraint firstItem="oUP-it-2e3" firstAttribute="top" secondItem="Tnu-Xr-w8A" secondAttribute="bottom" constant="8" id="rFe-Da-6si"/>
+                            <constraint firstItem="Tnu-Xr-w8A" firstAttribute="trailing" secondItem="9Os-i7-TdL" secondAttribute="trailing" id="tbz-oF-cRC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Os-i7-TdL"/>
                     </view>
                     <navigationItem key="navigationItem" id="A8z-sz-TTz"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="contentImage" destination="KhN-5h-eby" id="yHG-JU-rT0"/>
-                        <outlet property="logoImage" destination="oyA-vO-NIa" id="djm-t8-CtA"/>
+                        <outlet property="v1" destination="u3a-A8-2Sa" id="yBh-Zn-alT"/>
+                        <outlet property="v2" destination="P6Y-Xu-Z9j" id="YiA-7x-KU7"/>
+                        <outlet property="v3" destination="fAy-28-BWH" id="cYR-BQ-JNE"/>
+                        <outlet property="v4" destination="Tnu-Xr-w8A" id="SmU-Ju-3A8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbS-eg-AbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -126,11 +152,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BLS_BG" width="4270" height="3204"/>
-        <image name="BLS_Content" width="3732" height="1819"/>
         <image name="BLS_Home_icon" width="200" height="200"/>
-        <image name="BLS_Logo" width="2118" height="486"/>
         <image name="BLS_Marker_icon" width="200" height="200"/>
         <image name="BLS_Reference_icon" width="200" height="200"/>
+        <image name="bRIM_LS_1" width="2048" height="1536"/>
     </resources>
 </document>
