@@ -36,11 +36,16 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+         Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.animateGif), userInfo: nil, repeats: false)
+        
+       
+    }
+    
+    @objc func animateGif(){
         DispatchQueue.main.async {
             let jermyGif = UIImage.gifImageWithName(name: "water")
             self.mainImage.image = jermyGif
         }
-       
     }
     
     @objc func moveToNext(gestureRecg:UISwipeGestureRecognizer){
