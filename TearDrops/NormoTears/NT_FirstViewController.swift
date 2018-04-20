@@ -32,7 +32,7 @@ let playerController = AVPlayerViewController()
     override func viewWillAppear(_ animated: Bool) {
         
         if normovid == 0{
-            playVideo(videoUrl:"Normotears")
+            playVideo(videoUrl:"Normotea")
             normovid = 1
         }else {
             self.playerController.dismiss(animated: true)
