@@ -257,54 +257,63 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func milflodexAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Milflodex").instantiateViewController(withIdentifier: "MIDEX_VideoViewController") as! MIDEX_VideoViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is MIDEX_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Milflodex").instantiateViewController(withIdentifier: "MIDEX_VideoViewController") as! MIDEX_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
         }
     }
     @IBAction func milfloxAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Milflox").instantiateViewController(withIdentifier: "MIL_VideoViewController") as! MIL_VideoViewController
+       
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is MIL_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+             let newViewController = setupStoryBoard(storyBoardName: "Milflox").instantiateViewController(withIdentifier: "MIL_VideoViewController") as! MIL_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
         }
     }
     @IBAction func megabromAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Megabrom").instantiateViewController(withIdentifier: "MG_VideoViewController") as! MG_VideoViewController
+       
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is MG_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+             let newViewController = setupStoryBoard(storyBoardName: "Megabrom").instantiateViewController(withIdentifier: "MG_VideoViewController") as! MG_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
