@@ -37,8 +37,6 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
          Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.animateGif), userInfo: nil, repeats: false)
-        
-       
     }
     
     @objc func animateGif(){

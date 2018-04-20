@@ -23,6 +23,7 @@ class NT_SecondViewController: UIViewController,PenviewDelegate {
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(moveToNext(gestureRecg:)))
         leftSwipe.direction = .left
         self.view.addGestureRecognizer(leftSwipe)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         
