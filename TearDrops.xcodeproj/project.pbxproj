@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA88EE4F244E3CB4ED81584 /* Pods_TearDrops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7023C732E285D225C1035A87 /* Pods_TearDrops.framework */; };
+		314B80458CE89905689ACC6E /* Pods_TearDropsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2AF766E356A32F15BD5C24 /* Pods_TearDropsUITests.framework */; };
 		4410F60D208446DD00B6C85A /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410F60C208446DD00B6C85A /* ReferenceView.swift */; };
 		4410F6122084E75200B6C85A /* ReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410F6102084E75200B6C85A /* ReferenceViewController.swift */; };
 		4410F6132084E75200B6C85A /* ReferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4410F6112084E75200B6C85A /* ReferenceViewController.xib */; };
@@ -116,6 +118,7 @@
 		5B28A0F3208609D40007E35D /* Megabrom.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0ED208609D40007E35D /* Megabrom.mp4 */; };
 		5B28A0F4208609D40007E35D /* Milflox.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0EE208609D40007E35D /* Milflox.mp4 */; };
 		5B28A0F620861D6E0007E35D /* water.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0F520861D6E0007E35D /* water.gif */; };
+		BD847D86D4EE1BDF57042009 /* Pods_TearDropsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962CA34CB9973AA619B24EB /* Pods_TearDropsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19898E6B376BCA985A092EC8 /* Pods-TearDropsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDropsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TearDropsTests/Pods-TearDropsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2962CA34CB9973AA619B24EB /* Pods_TearDropsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TearDropsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4410F60C208446DD00B6C85A /* ReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
 		4410F6102084E75200B6C85A /* ReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceViewController.swift; sourceTree = "<group>"; };
 		4410F6112084E75200B6C85A /* ReferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReferenceViewController.xib; sourceTree = "<group>"; };
@@ -253,6 +258,13 @@
 		5B28A0ED208609D40007E35D /* Megabrom.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Megabrom.mp4; sourceTree = "<group>"; };
 		5B28A0EE208609D40007E35D /* Milflox.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milflox.mp4; sourceTree = "<group>"; };
 		5B28A0F520861D6E0007E35D /* water.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = water.gif; sourceTree = "<group>"; };
+		6109CF53939C64FC776CA4A6 /* Pods-TearDropsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDropsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TearDropsUITests/Pods-TearDropsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7023C732E285D225C1035A87 /* Pods_TearDrops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TearDrops.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		725D11FE43035E4A83881C6E /* Pods-TearDropsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDropsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TearDropsTests/Pods-TearDropsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E94FB5FBF5C8122A8C0E532 /* Pods-TearDropsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDropsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TearDropsUITests/Pods-TearDropsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA2AF766E356A32F15BD5C24 /* Pods_TearDropsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TearDropsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FFB003224C8B269A87F749 /* Pods-TearDrops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDrops.release.xcconfig"; path = "Pods/Target Support Files/Pods-TearDrops/Pods-TearDrops.release.xcconfig"; sourceTree = "<group>"; };
+		E158F8B4870CE840C3B46EF7 /* Pods-TearDrops.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TearDrops.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TearDrops/Pods-TearDrops.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA88EE4F244E3CB4ED81584 /* Pods_TearDrops.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD847D86D4EE1BDF57042009 /* Pods_TearDropsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +288,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314B80458CE89905689ACC6E /* Pods_TearDropsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +314,8 @@
 				4482108B207C592400FA0C1E /* TearDropsTests */,
 				44821096207C592400FA0C1E /* TearDropsUITests */,
 				44821072207C592200FA0C1E /* Products */,
+				FD6CDBE53ACDE79BCF88282D /* Pods */,
+				C8B63730AC893F8122553CDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -579,6 +596,29 @@
 			path = NormoTears;
 			sourceTree = "<group>";
 		};
+		C8B63730AC893F8122553CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7023C732E285D225C1035A87 /* Pods_TearDrops.framework */,
+				2962CA34CB9973AA619B24EB /* Pods_TearDropsTests.framework */,
+				CA2AF766E356A32F15BD5C24 /* Pods_TearDropsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6CDBE53ACDE79BCF88282D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E158F8B4870CE840C3B46EF7 /* Pods-TearDrops.debug.xcconfig */,
+				E0FFB003224C8B269A87F749 /* Pods-TearDrops.release.xcconfig */,
+				19898E6B376BCA985A092EC8 /* Pods-TearDropsTests.debug.xcconfig */,
+				725D11FE43035E4A83881C6E /* Pods-TearDropsTests.release.xcconfig */,
+				6109CF53939C64FC776CA4A6 /* Pods-TearDropsUITests.debug.xcconfig */,
+				7E94FB5FBF5C8122A8C0E532 /* Pods-TearDropsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -586,9 +626,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4482109C207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDrops" */;
 			buildPhases = (
+				D919A419AA8707074758E026 /* [CP] Check Pods Manifest.lock */,
 				4482106D207C592200FA0C1E /* Sources */,
 				4482106E207C592200FA0C1E /* Frameworks */,
 				4482106F207C592200FA0C1E /* Resources */,
+				87EA39B18CB0D836F85C8147 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -603,6 +645,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4482109F207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsTests" */;
 			buildPhases = (
+				399C16A9594209FA2A163A16 /* [CP] Check Pods Manifest.lock */,
 				44821084207C592400FA0C1E /* Sources */,
 				44821085207C592400FA0C1E /* Frameworks */,
 				44821086207C592400FA0C1E /* Resources */,
@@ -621,6 +664,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448210A2207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsUITests" */;
 			buildPhases = (
+				FDBB38A9A44120834000B22F /* [CP] Check Pods Manifest.lock */,
 				4482108F207C592400FA0C1E /* Sources */,
 				44821090207C592400FA0C1E /* Frameworks */,
 				44821091207C592400FA0C1E /* Resources */,
@@ -736,6 +780,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		399C16A9594209FA2A163A16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TearDropsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87EA39B18CB0D836F85C8147 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TearDrops/Pods-TearDrops-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TearDrops/Pods-TearDrops-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D919A419AA8707074758E026 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TearDrops-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBB38A9A44120834000B22F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TearDropsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4482106D207C592200FA0C1E /* Sources */ = {
@@ -985,17 +1104,15 @@
 		};
 		4482109D207C592400FA0C1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E158F8B4870CE840C3B46EF7 /* Pods-TearDrops.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X52J6MQH98;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDrops/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digiaplus.Milmeteva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TearDrops/TearDrops-Bridging-Header.h";
@@ -1007,17 +1124,15 @@
 		};
 		4482109E207C592400FA0C1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FFB003224C8B269A87F749 /* Pods-TearDrops.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X52J6MQH98;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDrops/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digiaplus.Milmeteva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TearDrops/TearDrops-Bridging-Header.h";
@@ -1028,17 +1143,14 @@
 		};
 		448210A0207C592400FA0C1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19898E6B376BCA985A092EC8 /* Pods-TearDropsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDropsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1049,17 +1161,14 @@
 		};
 		448210A1207C592400FA0C1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 725D11FE43035E4A83881C6E /* Pods-TearDropsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDropsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1070,16 +1179,13 @@
 		};
 		448210A3207C592400FA0C1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6109CF53939C64FC776CA4A6 /* Pods-TearDropsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDropsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1090,16 +1196,13 @@
 		};
 		448210A4207C592400FA0C1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E94FB5FBF5C8122A8C0E532 /* Pods-TearDropsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBKQWSD5GW;
 				INFOPLIST_FILE = TearDropsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

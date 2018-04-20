@@ -51,7 +51,7 @@ let playerController = AVPlayerViewController()
         //
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+
     }
     
     @objc func moveToNext(gestureRecg:UISwipeGestureRecognizer){

@@ -26,7 +26,7 @@ class MDEX_SecondViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Milflodex Cataract & LASIK Surgery BKC Free")
         self.contentImage.alpha = 0
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.logoImage.frame
@@ -81,7 +81,7 @@ class MDEX_SecondViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

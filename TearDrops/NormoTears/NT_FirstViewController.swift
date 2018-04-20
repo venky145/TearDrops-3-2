@@ -31,6 +31,8 @@ let playerController = AVPlayerViewController()
     }
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Normo Tears Moderate & Severe Dry Eyes")
+        
         if normovid == 0{
             playVideo(videoUrl:"Normotea")
             normovid = 1
@@ -62,21 +64,24 @@ let playerController = AVPlayerViewController()
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func videopop(_ sender: UIButton) {
-//        playVideo2(videoUrl:"Normo_Tears_in")
+        
+        googleAnalyticsTrackingWith(trackingName: "Event Tracking \nCategory: Normo Tears \nAction: Video \nLabel: Normo Tears Drug Release")
+        
+        playVideo(videoUrl:"Normo_Tears_in")
     }
-    func playVideo2(videoUrl:String){
-        guard let path = Bundle.main.path(forResource: videoUrl, ofType:"mp4") else {
-            debugPrint("video.m4v not found")
-            return
-        }
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
-        playerController.player = player
-        playerController.showsPlaybackControls = true
-        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player?.currentItem)
-        present(playerController, animated: true) {
-            player.play()
-        }
-    }
+//    func playVideo2(videoUrl:String){
+//        guard let path = Bundle.main.path(forResource: videoUrl, ofType:"mp4") else {
+//            debugPrint("video.m4v not found")
+//            return
+//        }
+//        let player = AVPlayer(url: URL(fileURLWithPath: path))
+//        playerController.player = player
+//        playerController.showsPlaybackControls = true
+//        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player?.currentItem)
+//        present(playerController, animated: true) {
+//            player.play()
+//        }
+//    }
     
     func playVideo(videoUrl:String){
         guard let path = Bundle.main.path(forResource: videoUrl, ofType:"mp4") else {
@@ -111,7 +116,7 @@ let playerController = AVPlayerViewController()
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

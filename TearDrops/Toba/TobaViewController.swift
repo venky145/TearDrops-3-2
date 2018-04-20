@@ -11,8 +11,20 @@ import UIKit
 class TobaViewController: UIViewController,PenviewDelegate {
 
     @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var contentImage: UIImageView!
     
+    
+    @IBOutlet weak var v1: UIView!
+    
+    @IBOutlet weak var v2: UIView!
+    
+    
+    @IBOutlet weak var v3: UIView!
+    @IBOutlet weak var v4: UIView!
+    
+    @IBOutlet weak var v5: UIView!
+    
+    @IBOutlet weak var v6: UIView!
+    @IBOutlet weak var v7: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,21 +37,51 @@ class TobaViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
-        self.contentImage.alpha = 0
-        let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
-        let prevRect = self.logoImage.frame
-        self.logoImage.frame = rect
-        
-        
+        self.v1.alpha = 1
+        self.v2.alpha = 1
+        self.v3.alpha = 1
+        self.v4.alpha = 1
+        self.v5.alpha = 1
+        self.v6.alpha = 1
+        self.v7.alpha = 1
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.animateViews), userInfo: nil, repeats: false)
+    }
+    
+    @objc func animateViews(){
         UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseIn, animations: {
-            self.logoImage.frame = prevRect
+            self.v1.alpha = 0
             
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.contentImage.alpha = 1
-            }) { (finished:Bool) in
+                self.v2.alpha = 0
                 
+            }) { (finished:Bool) in
+                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                    self.v3.alpha = 0
+                    
+                }) { (finished:Bool) in
+                    UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.v4.alpha = 0
+                        
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.v5.alpha = 0
+                            
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.v6.alpha = 0
+                                
+                            }) { (finished:Bool) in
+                                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                    self.v7.alpha = 0
+                                    
+                                }) { (finished:Bool) in
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -56,7 +98,7 @@ class TobaViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

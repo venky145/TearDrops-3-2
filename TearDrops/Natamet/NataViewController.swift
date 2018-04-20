@@ -34,7 +34,7 @@ class NataViewController: UIViewController,PenviewDelegate {
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Natamet USFDA Approved Formulation")
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.logoImage.frame
         self.logoImage.frame = rect

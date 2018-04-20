@@ -26,6 +26,8 @@ class GEye_ThirdViewController: UIViewController,PenviewDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Gloeye Age Related Macular Degeneration")
+        
         self.contentImage.alpha = 0
         
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
@@ -71,7 +73,7 @@ class GEye_ThirdViewController: UIViewController,PenviewDelegate {
     }
 
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+       moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
