@@ -27,7 +27,7 @@ class LCOM_SecondViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Latocom CF Glaucoma IOP Lowering Efficacy")
         self.contentImage.alpha = 0
         self.contentImage2.alpha = 0
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
@@ -78,7 +78,7 @@ class LCOM_SecondViewController: UIViewController,PenviewDelegate {
     }
 
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

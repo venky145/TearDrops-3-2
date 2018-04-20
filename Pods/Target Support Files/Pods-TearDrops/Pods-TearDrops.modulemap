@@ -1,0 +1,6 @@
+framework module Pods_TearDrops {
+  umbrella header "Pods-TearDrops-umbrella.h"
+
+  export *
+  module * { export * }
+}

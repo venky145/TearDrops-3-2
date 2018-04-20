@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     let vcHandler = GlobalClass.shared
     let playerController = AVPlayerViewController()
+    var isVideo = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,25 +35,31 @@ class ViewController: UIViewController {
         isSequence = false
         teardropvid = 0
         normovid = 0
-        print(teardropvid)
+        
+        if isVideo{
+            moveToController()
+        }else{
+            vcHandler.selectionArray.removeAll()
+        }
     }
     
     
     @IBAction func tearDropsAction(_ sender: Any) {
-        
-        
-        let newViewController = setupStoryBoard(storyBoardName: "Main").instantiateViewController(withIdentifier: "TD_FirstPageViewController") as! TD_FirstPageViewController
+
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is TD_FirstPageViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Main").instantiateViewController(withIdentifier: "TD_FirstPageViewController") as! TD_FirstPageViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -60,23 +67,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tearDropsGelAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "TearDropsGel").instantiateViewController(withIdentifier: "TDG_FirstViewController") as! TDG_FirstViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            button.backgroundColor = UIColor.clear
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
+            for controller in vcHandler.selectionArray
+            {
+                if controller is TDG_FirstViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "TearDropsGel").instantiateViewController(withIdentifier: "TDG_FirstViewController") as! TDG_FirstViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
         }
-//        moveToViewController(nextVC: newViewController,for: self)
     }
     
     @IBAction func LatoprostAction(_ sender: Any) {
@@ -125,18 +134,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func brimololAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Brimolol").instantiateViewController(withIdentifier: "BRIMO_VideoViewController") as! BRIMO_VideoViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is BRIMO_VideoViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Brimolol").instantiateViewController(withIdentifier: "BRIMO_VideoViewController") as! BRIMO_VideoViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -144,18 +156,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func brimosunLSAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Brimosun").instantiateViewController(withIdentifier: "BrimoSViewController") as! BrimoSViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is BrimoSViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Brimosun").instantiateViewController(withIdentifier: "BrimoSViewController") as! BrimoSViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -163,18 +178,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func brimosunPAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "BrimosunP").instantiateViewController(withIdentifier: "BrimoPViewController") as! BrimoPViewController
+
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is BrimoPViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "BrimosunP").instantiateViewController(withIdentifier: "BrimoPViewController") as! BrimoPViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -182,18 +200,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func natametAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Natamet").instantiateViewController(withIdentifier: "NataViewController") as! NataViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is NataViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "Natamet").instantiateViewController(withIdentifier: "NataViewController") as! NataViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -201,18 +222,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tobaFAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "TobaF").instantiateViewController(withIdentifier: "TOBAFViewController") as! TOBAFViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is TOBAFViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "TobaF").instantiateViewController(withIdentifier: "TOBAFViewController") as! TOBAFViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -220,18 +244,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tobaAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "Toba").instantiateViewController(withIdentifier: "TobaViewController") as! TobaViewController
+       
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is TobaViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+             let newViewController = setupStoryBoard(storyBoardName: "Toba").instantiateViewController(withIdentifier: "TobaViewController") as! TobaViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -239,18 +266,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func milfloxPlusAction(_ sender: Any) {
-        let newViewController = setupStoryBoard(storyBoardName: "MilfloxPlus").instantiateViewController(withIdentifier: "MPLUS_FirstViewController") as! MPLUS_FirstViewController
+        
         let button = sender as! UIButton
-        let vcObject = ViewControllerObject()
-        vcObject.viewController = newViewController
-        vcObject.storyBoardName = "Main"
         if button.isSelected{
             button.isSelected = false
-            if vcHandler.selectionArray.contains(newViewController){
-                vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != newViewController}
-                button.backgroundColor = UIColor.clear
+            for controller in vcHandler.selectionArray
+            {
+                if controller is MPLUS_FirstViewController
+                {
+                    vcHandler.selectionArray = vcHandler.selectionArray.filter{$0 != controller}
+                    button.backgroundColor = UIColor.clear
+                }
             }
+            
         }else{
+            let newViewController = setupStoryBoard(storyBoardName: "MilfloxPlus").instantiateViewController(withIdentifier: "MPLUS_FirstViewController") as! MPLUS_FirstViewController
             button.isSelected = true
             button.backgroundColor = UIColor.blue
             vcHandler.selectionArray.append(newViewController)
@@ -385,22 +415,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submitAction(_ sender: Any) {
-       // playVideo(videoUrl: "Division Opener")
+        
         
         if vcHandler.selectionArray.count > 0 {
-        let initialVC = vcHandler.selectionArray[0]
-        moveToViewController(nextVC: initialVC,for: self)
+            playVideo(videoUrl: "Division Opener")
+//        let initialVC = vcHandler.selectionArray[0]
+//        moveToViewController(nextVC: initialVC,for: self)
         }
     }
     
     func playVideo(videoUrl:String){
+        
         guard let path = Bundle.main.path(forResource: videoUrl, ofType:"mp4") else {
             debugPrint("video.m4v not found")
             return
         }
+        isVideo = true
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         playerController.player = player
-        playerController.showsPlaybackControls = false
+        playerController.showsPlaybackControls = true
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerController.player?.currentItem)
         present(playerController, animated: true) {
             player.play()
@@ -410,8 +443,13 @@ class ViewController: UIViewController {
     @objc func playerDidFinishPlaying(note: NSNotification) {
         self.playerController.dismiss(animated: true)
         isSequence = false
+        moveToController()
+    }
+    
+    func moveToController(){
         let initialVC = vcHandler.selectionArray[0]
         moveToViewController(nextVC: initialVC,for: self)
+        isVideo = false
     }
     
     override func didReceiveMemoryWarning() {

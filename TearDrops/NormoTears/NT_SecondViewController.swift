@@ -23,8 +23,11 @@ class NT_SecondViewController: UIViewController,PenviewDelegate {
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(moveToNext(gestureRecg:)))
         leftSwipe.direction = .left
         self.view.addGestureRecognizer(leftSwipe)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
+        
+        googleAnalyticsTrackingWith(trackingName: "Normo Tears Post LASIK Surgery")
         
         self.contentImage.alpha = 0
         
@@ -70,7 +73,7 @@ class NT_SecondViewController: UIViewController,PenviewDelegate {
 
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

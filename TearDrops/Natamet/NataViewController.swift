@@ -11,7 +11,15 @@ import UIKit
 class NataViewController: UIViewController,PenviewDelegate {
 
     @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var contentImage: UIImageView!
+    @IBOutlet weak var ivLogo: UIImageView!
+    @IBOutlet weak var ivTitle: UIImageView!
+    @IBOutlet weak var ivContentBG: UIImageView!
+    @IBOutlet weak var ivContent1: UIImageView!
+    @IBOutlet weak var ivContent2: UIImageView!
+    @IBOutlet weak var ivContent3: UIImageView!
+    @IBOutlet weak var ivContent4: UIImageView!
+    @IBOutlet weak var ivImage: UIImageView!
+    @IBOutlet weak var ivDosage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +31,65 @@ class NataViewController: UIViewController,PenviewDelegate {
                 let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(moveToNext(gestureRecg:)))
                 leftSwipe.direction = .left
                 self.view.addGestureRecognizer(leftSwipe)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
-        
-        self.contentImage.alpha = 0
+        googleAnalyticsTrackingWith(trackingName: "Natamet USFDA Approved Formulation")
         let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
         let prevRect = self.logoImage.frame
         self.logoImage.frame = rect
         
+        //        ivLogo.alpha = 0
+        ivTitle.alpha = 0
+        ivContentBG.alpha = 0
+        ivContent1.alpha = 0
+        ivContent2.alpha = 0
+        ivContent3.alpha = 0
+        ivContent4.alpha = 0
+        ivImage.alpha = 0
+        ivDosage.alpha = 0
         
         UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseIn, animations: {
             self.logoImage.frame = prevRect
             
         }) { (finished:Bool) in
-            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
-                self.contentImage.alpha = 1
-            }) { (finished:Bool) in
-                
-            }
+//            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+//                self.ivLogo.alpha = 1
+//            }) { (finished:Bool) in
+                UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                    self.ivTitle.alpha = 1
+                }) { (finished:Bool) in
+                    UIView.animate(withDuration: 0.4, delay: 0.1, options: .curveEaseIn, animations: {
+                        self.ivContentBG.alpha = 1
+                    }) { (finished:Bool) in
+                        UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseIn, animations: {
+                            self.ivContent1.alpha = 1
+                        }) { (finished:Bool) in
+                            UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseIn, animations: {
+                                self.ivContent2.alpha = 1
+                            }) { (finished:Bool) in
+                                UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseIn, animations: {
+                                    self.ivContent3.alpha = 1
+                                }) { (finished:Bool) in
+                                    UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseIn, animations: {
+                                        self.ivContent4.alpha = 1
+                                    }) { (finished:Bool) in
+                                        UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                            self.ivImage.alpha = 1
+                                        }) { (finished:Bool) in
+                                            UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
+                                                self.ivDosage.alpha = 1
+                                            }) { (finished:Bool) in
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+//            }
         }
     }
     

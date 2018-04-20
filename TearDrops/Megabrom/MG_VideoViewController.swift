@@ -56,7 +56,7 @@ class MG_VideoViewController: UIViewController {
         moveToViewController(nextVC: newViewController,for: self)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome DED Symptoms")
     }
     
     @objc func moveToNext(gestureRecg:UISwipeGestureRecognizer){

@@ -25,7 +25,7 @@ class MIL_SecondViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Milflox Pre & Post Surgical Prophylaxis Rapid Action")
         self.subHeadImage.alpha = 0
         self.leftImage.alpha = 0
         self.rightImage.alpha = 0
@@ -79,7 +79,7 @@ class MIL_SecondViewController: UIViewController,PenviewDelegate {
         moveToViewController(nextVC: newViewController,for: self)
     }
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

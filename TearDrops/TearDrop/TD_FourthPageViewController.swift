@@ -13,7 +13,7 @@ class TD_FourthPageViewController: UIViewController,PenviewDelegate {
     @IBOutlet weak var content: UIImageView!
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
@@ -54,6 +54,8 @@ class TD_FourthPageViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome Incidence")
         
         self.content.alpha = 0
         

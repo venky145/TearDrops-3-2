@@ -15,7 +15,7 @@ class TD_ThirdPageViewController: UIViewController,PenviewDelegate {
     @IBOutlet weak var content: UIImageView!
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
@@ -55,6 +55,8 @@ class TD_ThirdPageViewController: UIViewController,PenviewDelegate {
         
     }
     override func viewWillAppear(_ animated: Bool) {
+        
+        googleAnalyticsTrackingWith(trackingName: "Tear Drops Dry Eye Pre & Post Cataract Surgery")
         
         self.heading.alpha = 0
         self.content.alpha = 0

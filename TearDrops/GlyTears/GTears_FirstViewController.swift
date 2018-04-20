@@ -26,6 +26,8 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        googleAnalyticsTrackingWith(trackingName: "Glytears Cheerful Dry Eyes Teaser")
+        
         
 //        self.mainImage.alpha = 0
         
@@ -36,11 +38,14 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+         Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.animateGif), userInfo: nil, repeats: false)
+    }
+    
+    @objc func animateGif(){
         DispatchQueue.main.async {
             let jermyGif = UIImage.gifImageWithName(name: "water")
             self.mainImage.image = jermyGif
         }
-       
     }
     
     @objc func moveToNext(gestureRecg:UISwipeGestureRecognizer){
@@ -73,7 +78,7 @@ class GTears_FirstViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+       moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)

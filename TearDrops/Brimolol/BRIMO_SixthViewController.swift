@@ -26,7 +26,7 @@ class BRIMO_SixthViewController: UIViewController,PenviewDelegate {
         self.view.addGestureRecognizer(leftSwipe)
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        googleAnalyticsTrackingWith(trackingName: "Brimolol Post Intravitreal Injection IOP Spike")
         self.contentImage.alpha = 0
         self.contentImage2.alpha = 0
         
@@ -85,7 +85,7 @@ class BRIMO_SixthViewController: UIViewController,PenviewDelegate {
     }
     
     @IBAction func homeAction(_ sender: Any) {
-        moveToPreviousViewController(currentVC: self, at: 0)
+        moveToHome(currentVC:self)
     }
     @IBAction func editAction(_ sender: Any) {
         disbaleAllGestures(status: false)
