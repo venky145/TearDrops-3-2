@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="e2h-a4-mc8">
+            <objects>
+                <viewController storyboardIdentifier="MG_FirstViewController" id="0wA-9N-CNs" customClass="MG_FirstViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O1f-qP-CRy"/>
+                        <viewControllerLayoutGuide type="bottom" id="XVJ-E0-XuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aO8-nk-lsz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG_BG" translatesAutoresizingMaskIntoConstraints="NO" id="9yL-Ph-SY2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG1_Content" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-OQ-rGt">
+                                <rect key="frame" x="30" y="271" width="984" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-Ns-gZe">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7n-Qq-qMI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JdL-hD-fXZ"/>
+                                            <constraint firstAttribute="width" constant="50" id="b6S-Q2-YsW"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="1bY-cr-12B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-gC-JwK">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="b8S-QP-kdk"/>
+                                            <constraint firstAttribute="width" constant="50" id="hWZ-5y-Mru"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="xiA-ke-f3s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-Xc-cOP">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="XwI-eC-5qN"/>
+                                            <constraint firstAttribute="width" constant="50" id="ygg-ow-V7S"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_Reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="QNZ-QS-3y5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fZY-OW-0qG"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-30-bJ8">
+                                <rect key="frame" x="772" y="29" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUJ-Iz-aGZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Wv-Lw-DHt"/>
+                                            <constraint firstAttribute="width" constant="40" id="7GI-T9-2IN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="MG_selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="TmQ-Ae-jo5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-R9-Tlj">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="bMD-QU-FX3"/>
+                                            <constraint firstAttribute="height" constant="40" id="kG9-5T-Tdq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="9ZI-eX-eg5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-b9-fL2">
+                                        <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="LYH-wT-tUp"/>
+                                            <constraint firstAttribute="height" constant="40" id="fKB-rQ-hrB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="03" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="oLu-0K-0Sd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaZ-u0-8QA">
+                                        <rect key="frame" x="144" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="3wx-V5-nCE"/>
+                                            <constraint firstAttribute="height" constant="40" id="6og-OB-ez8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="04" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="Jwb-te-ldx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFM-px-XBc">
+                                        <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UyQ-EL-tmd"/>
+                                            <constraint firstAttribute="height" constant="40" id="rYc-W6-NAD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="05" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifthAction:" destination="0wA-9N-CNs" eventType="touchUpInside" id="CJd-kM-vk0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG1_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vV8-oL-WVG">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="UHZ-JN-AZA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="elQ-OQ-rGt" firstAttribute="top" secondItem="vV8-oL-WVG" secondAttribute="bottom" constant="35" id="3Xq-C9-HWY"/>
+                            <constraint firstItem="vV8-oL-WVG" firstAttribute="centerX" secondItem="aO8-nk-lsz" secondAttribute="centerX" id="4OP-5D-9Wd"/>
+                            <constraint firstItem="vV8-oL-WVG" firstAttribute="leading" secondItem="BGm-Ns-gZe" secondAttribute="trailing" constant="61" id="503-QL-CSU"/>
+                            <constraint firstItem="BGm-Ns-gZe" firstAttribute="top" secondItem="aO8-nk-lsz" secondAttribute="top" constant="10" id="79b-Kc-RqF"/>
+                            <constraint firstItem="9yL-Ph-SY2" firstAttribute="centerX" secondItem="aO8-nk-lsz" secondAttribute="centerX" id="CbK-3T-bU6"/>
+                            <constraint firstItem="vV8-oL-WVG" firstAttribute="top" secondItem="O1f-qP-CRy" secondAttribute="bottom" constant="39" id="QUm-pb-Wjb"/>
+                            <constraint firstItem="BGm-Ns-gZe" firstAttribute="leading" secondItem="aO8-nk-lsz" secondAttribute="leading" constant="10" id="UQh-45-Gv3"/>
+                            <constraint firstItem="F5n-30-bJ8" firstAttribute="top" secondItem="O1f-qP-CRy" secondAttribute="bottom" constant="9" id="XLW-ef-wkA"/>
+                            <constraint firstAttribute="trailing" secondItem="vV8-oL-WVG" secondAttribute="trailing" constant="243" id="YXq-D1-hgJ"/>
+                            <constraint firstItem="9yL-Ph-SY2" firstAttribute="width" secondItem="aO8-nk-lsz" secondAttribute="width" id="fyg-G9-4LI"/>
+                            <constraint firstItem="XVJ-E0-XuU" firstAttribute="top" secondItem="elQ-OQ-rGt" secondAttribute="bottom" constant="5" id="k27-u1-Sui"/>
+                            <constraint firstItem="9yL-Ph-SY2" firstAttribute="height" secondItem="aO8-nk-lsz" secondAttribute="height" id="nUZ-R6-0pF"/>
+                            <constraint firstItem="9yL-Ph-SY2" firstAttribute="centerY" secondItem="aO8-nk-lsz" secondAttribute="centerY" id="tRM-iy-D9n"/>
+                            <constraint firstAttribute="trailing" secondItem="elQ-OQ-rGt" secondAttribute="trailing" constant="10" id="tcd-dS-8YR"/>
+                            <constraint firstAttribute="trailing" secondItem="F5n-30-bJ8" secondAttribute="trailing" constant="20" id="uXW-wR-nRZ"/>
+                            <constraint firstItem="elQ-OQ-rGt" firstAttribute="leading" secondItem="aO8-nk-lsz" secondAttribute="leading" constant="30" id="vij-bd-NMf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uEV-Uj-ELN"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="elQ-OQ-rGt" id="5tF-b8-UAV"/>
+                        <outlet property="logoImage" destination="vV8-oL-WVG" id="yvx-CL-Qjx"/>
+                        <segue destination="8gd-eA-KTY" kind="show" id="0kU-LP-n0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4B-H7-Uxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3890.0390624999995" y="-195.3125"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="gTk-s3-6GW">
+            <objects>
+                <viewController storyboardIdentifier="MG_SecondViewController" id="8gd-eA-KTY" customClass="MG_SecondViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOX-D9-b54"/>
+                        <viewControllerLayoutGuide type="bottom" id="G5G-oV-QsP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mel-gK-6vn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG_BG" translatesAutoresizingMaskIntoConstraints="NO" id="P1m-s2-MPR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG2.content" translatesAutoresizingMaskIntoConstraints="NO" id="gly-yE-yfZ">
+                                <rect key="frame" x="50" y="246" width="984" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-PR-SOd">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evC-uq-O30">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="e9h-Qs-k3N"/>
+                                            <constraint firstAttribute="width" constant="50" id="xy0-zt-QsN"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="tt4-BA-kn8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iW-di-2BS">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Fxy-Kf-A6A"/>
+                                            <constraint firstAttribute="height" constant="50" id="uyS-aw-GWx"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="FSP-Yu-L19"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgX-Qg-TSM">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ShN-Hg-Yxy"/>
+                                            <constraint firstAttribute="width" constant="50" id="ljM-lM-LiW"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_Reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="jO6-5y-qCK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="32d-1W-ddC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oe8-D0-Qre">
+                                <rect key="frame" x="772" y="29" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="818-3U-qeV">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="HIL-aQ-dp7"/>
+                                            <constraint firstAttribute="height" constant="40" id="aD5-VK-w4Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="jGB-k8-KaG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-cH-ypi">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="BUz-Np-FUX"/>
+                                            <constraint firstAttribute="height" constant="40" id="uLV-wj-qOp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="MG_selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="pw4-SH-Gzk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJy-bU-TtX">
+                                        <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Fzz-3B-a8w"/>
+                                            <constraint firstAttribute="width" constant="40" id="klO-hb-ttV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="03" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="v0B-0X-NsC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dss-Yb-Wl4">
+                                        <rect key="frame" x="144" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="FjI-YV-gN0"/>
+                                            <constraint firstAttribute="height" constant="40" id="nzk-WY-pq8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="04" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="zyI-LA-9ph"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-WS-QhT">
+                                        <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SFK-SK-fZf"/>
+                                            <constraint firstAttribute="height" constant="40" id="VuC-n3-K1Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="05" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifthAction:" destination="8gd-eA-KTY" eventType="touchUpInside" id="Ii6-0B-4mq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG2_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-DX-qsU">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="sdo-n5-ksY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P1m-s2-MPR" firstAttribute="width" secondItem="Mel-gK-6vn" secondAttribute="width" id="1ai-9a-eum"/>
+                            <constraint firstAttribute="trailing" secondItem="XdA-DX-qsU" secondAttribute="trailing" constant="243" id="4sK-z3-zre"/>
+                            <constraint firstItem="P1m-s2-MPR" firstAttribute="height" secondItem="Mel-gK-6vn" secondAttribute="height" id="6oW-ld-PSM"/>
+                            <constraint firstItem="gly-yE-yfZ" firstAttribute="top" secondItem="XdA-DX-qsU" secondAttribute="bottom" constant="10" id="81r-Bl-BQH"/>
+                            <constraint firstItem="hCa-PR-SOd" firstAttribute="top" secondItem="Mel-gK-6vn" secondAttribute="top" constant="10" id="9xP-q9-cjd"/>
+                            <constraint firstItem="Oe8-D0-Qre" firstAttribute="top" secondItem="SOX-D9-b54" secondAttribute="bottom" constant="9" id="A2O-0I-54k"/>
+                            <constraint firstItem="XdA-DX-qsU" firstAttribute="leading" secondItem="hCa-PR-SOd" secondAttribute="trailing" constant="61" id="FB2-fL-Y7m"/>
+                            <constraint firstAttribute="trailing" secondItem="Oe8-D0-Qre" secondAttribute="trailing" constant="20" id="LiO-N1-4sv"/>
+                            <constraint firstItem="P1m-s2-MPR" firstAttribute="centerX" secondItem="Mel-gK-6vn" secondAttribute="centerX" id="SIo-n4-M4p"/>
+                            <constraint firstAttribute="trailing" secondItem="gly-yE-yfZ" secondAttribute="trailing" constant="-10" id="avc-Xf-puP"/>
+                            <constraint firstItem="gly-yE-yfZ" firstAttribute="leading" secondItem="Mel-gK-6vn" secondAttribute="leading" constant="50" id="dAw-t4-8bF"/>
+                            <constraint firstItem="G5G-oV-QsP" firstAttribute="top" secondItem="gly-yE-yfZ" secondAttribute="bottom" constant="30" id="iEU-Bk-dU2"/>
+                            <constraint firstItem="P1m-s2-MPR" firstAttribute="centerY" secondItem="Mel-gK-6vn" secondAttribute="centerY" id="j3k-Tq-cga"/>
+                            <constraint firstItem="XdA-DX-qsU" firstAttribute="centerX" secondItem="Mel-gK-6vn" secondAttribute="centerX" id="s4q-s7-5Vi"/>
+                            <constraint firstItem="hCa-PR-SOd" firstAttribute="leading" secondItem="Mel-gK-6vn" secondAttribute="leading" constant="10" id="ulp-AV-w62"/>
+                            <constraint firstItem="XdA-DX-qsU" firstAttribute="top" secondItem="SOX-D9-b54" secondAttribute="bottom" constant="39" id="zFM-5E-WWM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C6H-xf-4a8"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="gly-yE-yfZ" id="oOl-b7-aXD"/>
+                        <outlet property="logoImage" destination="XdA-DX-qsU" id="u9T-4n-RbM"/>
+                        <segue destination="jfE-wJ-2wg" kind="show" id="KsL-0w-BuW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kB-ZE-Brf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4549.8046875" y="-195.3125"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="NB8-6N-aTx">
+            <objects>
+                <viewController storyboardIdentifier="MG_ThirdViewController" id="jfE-wJ-2wg" customClass="MG_ThirdViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rh5-9o-TMt"/>
+                        <viewControllerLayoutGuide type="bottom" id="PcP-vY-XhB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vFh-iP-JTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG_BG" translatesAutoresizingMaskIntoConstraints="NO" id="lZn-he-PR2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG3_Content" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-rh-93y">
+                                <rect key="frame" x="117" y="256" width="887" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="SlR-cX-Y5b">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e16-EB-rI1">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="5W7-dU-VWY"/>
+                                            <constraint firstAttribute="height" constant="50" id="zVu-Fg-wgY"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="dvQ-rk-5bv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH0-d4-PYn">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4B3-IB-Ocn"/>
+                                            <constraint firstAttribute="height" constant="50" id="W2l-H3-aPZ"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="tdZ-gT-ccp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcL-7h-XLx">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KzH-BK-PJu"/>
+                                            <constraint firstAttribute="width" constant="50" id="mO9-0C-UAD"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_Reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="w2t-2b-nch"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uYh-Oc-fuY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eMN-mX-Oz5">
+                                <rect key="frame" x="772" y="29" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0D-0P-MvX">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="r8l-bB-hrd"/>
+                                            <constraint firstAttribute="height" constant="40" id="xeg-uk-cpF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="CS8-yQ-nb9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-3q-Ica">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5aR-mU-8VZ"/>
+                                            <constraint firstAttribute="width" constant="40" id="QQ5-h4-OIz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="RBI-RD-ZXm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-53-ZUm">
+                                        <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QFZ-Zy-qSK"/>
+                                            <constraint firstAttribute="width" constant="40" id="ZVS-ij-CAk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="03" backgroundImage="MG_selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="JyB-qa-Fo5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-ok-jBb">
+                                        <rect key="frame" x="144" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MLV-vq-YFw"/>
+                                            <constraint firstAttribute="width" constant="40" id="xvi-Mw-7RB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="04" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="zaS-34-4oP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-DS-2jH">
+                                        <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K34-75-du7"/>
+                                            <constraint firstAttribute="height" constant="40" id="XpO-Lv-I4f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="05" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifthAction:" destination="jfE-wJ-2wg" eventType="touchUpInside" id="zLJ-Ao-AIW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG2_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Ay-wr-laQ">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="GjQ-Qm-D3d"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Ay-wr-laQ" firstAttribute="leading" secondItem="SlR-cX-Y5b" secondAttribute="trailing" constant="61" id="8Ln-GF-Z9H"/>
+                            <constraint firstItem="hQH-rh-93y" firstAttribute="top" secondItem="5Ay-wr-laQ" secondAttribute="bottom" constant="20" id="FFh-U8-ADT"/>
+                            <constraint firstItem="hQH-rh-93y" firstAttribute="leading" secondItem="vFh-iP-JTZ" secondAttribute="leading" constant="117" id="G8c-kX-VZT"/>
+                            <constraint firstAttribute="trailing" secondItem="hQH-rh-93y" secondAttribute="trailing" constant="20" id="Hbc-Hh-bAT"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ay-wr-laQ" secondAttribute="trailing" constant="243" id="Ikb-bL-ZBY"/>
+                            <constraint firstItem="PcP-vY-XhB" firstAttribute="top" secondItem="hQH-rh-93y" secondAttribute="bottom" constant="20" id="LI8-AC-Ug3"/>
+                            <constraint firstItem="lZn-he-PR2" firstAttribute="height" secondItem="vFh-iP-JTZ" secondAttribute="height" id="UK5-hs-jMP"/>
+                            <constraint firstItem="5Ay-wr-laQ" firstAttribute="centerX" secondItem="vFh-iP-JTZ" secondAttribute="centerX" id="XUf-fg-6n9"/>
+                            <constraint firstItem="eMN-mX-Oz5" firstAttribute="top" secondItem="Rh5-9o-TMt" secondAttribute="bottom" constant="9" id="b4R-ib-p5Z"/>
+                            <constraint firstItem="SlR-cX-Y5b" firstAttribute="top" secondItem="vFh-iP-JTZ" secondAttribute="top" constant="10" id="et5-vY-lwC"/>
+                            <constraint firstItem="lZn-he-PR2" firstAttribute="width" secondItem="vFh-iP-JTZ" secondAttribute="width" id="iSd-dN-1JV"/>
+                            <constraint firstItem="5Ay-wr-laQ" firstAttribute="top" secondItem="Rh5-9o-TMt" secondAttribute="bottom" constant="39" id="kSc-9F-9UY"/>
+                            <constraint firstItem="SlR-cX-Y5b" firstAttribute="leading" secondItem="vFh-iP-JTZ" secondAttribute="leading" constant="10" id="vCv-TZ-c3O"/>
+                            <constraint firstAttribute="trailing" secondItem="eMN-mX-Oz5" secondAttribute="trailing" constant="20" id="vkB-H3-JTi"/>
+                            <constraint firstItem="lZn-he-PR2" firstAttribute="centerX" secondItem="vFh-iP-JTZ" secondAttribute="centerX" id="y9f-gd-JiW"/>
+                            <constraint firstItem="lZn-he-PR2" firstAttribute="centerY" secondItem="vFh-iP-JTZ" secondAttribute="centerY" id="yZN-b9-vGZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qPm-C5-Rvo"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="hQH-rh-93y" id="4To-GM-5Ra"/>
+                        <outlet property="logoImage" destination="5Ay-wr-laQ" id="wdQ-9D-ZN4"/>
+                        <segue destination="FSF-e1-ezf" kind="show" id="kEp-Vo-brm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJN-Wy-KRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5206.0546875" y="-195.3125"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="cKO-0C-CyL">
+            <objects>
+                <viewController storyboardIdentifier="MG_FourthViewController" id="FSF-e1-ezf" customClass="MG_FourthViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XKd-uK-sRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="wUH-Mb-Nx1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wf1-iA-yxG">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG_BG" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-3R-fGs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG4_Content" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-Df-751">
+                                <rect key="frame" x="79" y="261" width="930" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-RD-4kc">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksb-rz-XZs">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="NE8-u8-aU7"/>
+                                            <constraint firstAttribute="height" constant="50" id="oeR-2F-8Qw"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="Ho7-bD-ftd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEC-zw-Pwb">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="WjC-2P-64t"/>
+                                            <constraint firstAttribute="height" constant="50" id="gj8-WR-8lU"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="vCT-wc-Z8J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-Qd-5L9">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Cgk-R6-F2i"/>
+                                            <constraint firstAttribute="height" constant="50" id="K8l-Qj-wyF"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_Reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="1jh-tG-8eY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Cu-EQ-kAe"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="82A-wz-qPD">
+                                <rect key="frame" x="772" y="29" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-vu-I7k">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="91F-Tk-O34"/>
+                                            <constraint firstAttribute="height" constant="40" id="thR-nb-MxH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="8mf-8u-E9X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyR-wX-fsR">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dcS-Uh-cCu"/>
+                                            <constraint firstAttribute="height" constant="40" id="f4e-KS-gDl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="Ka5-Yr-Tzn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dj-X0-Qiq">
+                                        <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="DrP-1Q-Hyy"/>
+                                            <constraint firstAttribute="height" constant="40" id="ujV-RO-ObG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="03" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="ogS-01-hlM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldB-5w-0b7">
+                                        <rect key="frame" x="144" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dy7-DP-JMD"/>
+                                            <constraint firstAttribute="height" constant="40" id="tB1-uz-J4w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="04" backgroundImage="MG_selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="YqB-fu-Qcy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mID-C5-CNM">
+                                        <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0ML-AD-sRT"/>
+                                            <constraint firstAttribute="height" constant="40" id="hiY-S6-YSx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="05" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifthAction:" destination="FSF-e1-ezf" eventType="touchUpInside" id="Keb-z0-h3h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG2_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="0ou-91-MuL">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="HZ9-0q-nIv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fPG-3R-fGs" firstAttribute="width" secondItem="Wf1-iA-yxG" secondAttribute="width" id="7Vw-XH-bil"/>
+                            <constraint firstItem="xWT-RD-4kc" firstAttribute="leading" secondItem="Wf1-iA-yxG" secondAttribute="leading" constant="10" id="7fm-Tk-1Cl"/>
+                            <constraint firstItem="0ou-91-MuL" firstAttribute="top" secondItem="XKd-uK-sRW" secondAttribute="bottom" constant="39" id="A2c-b5-2ol"/>
+                            <constraint firstItem="82A-wz-qPD" firstAttribute="top" secondItem="XKd-uK-sRW" secondAttribute="bottom" constant="9" id="Jdv-yb-XsI"/>
+                            <constraint firstAttribute="trailing" secondItem="82A-wz-qPD" secondAttribute="trailing" constant="20" id="O0V-sk-Of0"/>
+                            <constraint firstItem="wUH-Mb-Nx1" firstAttribute="top" secondItem="EYc-Df-751" secondAttribute="bottom" constant="15" id="OEY-Ot-cG7"/>
+                            <constraint firstItem="0ou-91-MuL" firstAttribute="leading" secondItem="xWT-RD-4kc" secondAttribute="trailing" constant="61" id="Skc-6C-Sso"/>
+                            <constraint firstItem="EYc-Df-751" firstAttribute="top" secondItem="0ou-91-MuL" secondAttribute="bottom" constant="25" id="UaA-5j-opU"/>
+                            <constraint firstAttribute="trailing" secondItem="0ou-91-MuL" secondAttribute="trailing" constant="243" id="bAK-yv-0go"/>
+                            <constraint firstItem="xWT-RD-4kc" firstAttribute="top" secondItem="Wf1-iA-yxG" secondAttribute="top" constant="10" id="drH-nE-gG1"/>
+                            <constraint firstItem="fPG-3R-fGs" firstAttribute="centerX" secondItem="Wf1-iA-yxG" secondAttribute="centerX" id="fQ1-Si-Hcw"/>
+                            <constraint firstItem="fPG-3R-fGs" firstAttribute="height" secondItem="Wf1-iA-yxG" secondAttribute="height" id="hK5-5e-Rhd"/>
+                            <constraint firstItem="0ou-91-MuL" firstAttribute="centerX" secondItem="Wf1-iA-yxG" secondAttribute="centerX" id="iBz-CW-gvf"/>
+                            <constraint firstItem="fPG-3R-fGs" firstAttribute="centerY" secondItem="Wf1-iA-yxG" secondAttribute="centerY" id="jiD-hW-08Y"/>
+                            <constraint firstItem="EYc-Df-751" firstAttribute="leading" secondItem="Wf1-iA-yxG" secondAttribute="leading" constant="79" id="rr0-R1-tdd"/>
+                            <constraint firstAttribute="trailing" secondItem="EYc-Df-751" secondAttribute="trailing" constant="15" id="rwA-eq-kUy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5kb-I6-uwc"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="EYc-Df-751" id="uXw-WN-Jbi"/>
+                        <outlet property="logoImage" destination="0ou-91-MuL" id="4us-BF-Fvf"/>
+                        <segue destination="gIC-1w-GMp" kind="show" id="sig-qu-FHv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nR4-Fe-pdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5920.8984375" y="-195.3125"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="huA-IA-ICy">
+            <objects>
+                <viewController storyboardIdentifier="MG_FifthViewController" id="gIC-1w-GMp" customClass="MG_FifthViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qWw-RJ-WCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="XAc-Ie-fSg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4hA-f1-LBw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG_BG" translatesAutoresizingMaskIntoConstraints="NO" id="ru7-wf-Sno">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG5_contentimage" translatesAutoresizingMaskIntoConstraints="NO" id="pLD-nS-v3Z">
+                                <rect key="frame" x="55" y="256" width="959" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rvr-Is-njv">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-ZP-Opq">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="PJh-RR-f60"/>
+                                            <constraint firstAttribute="height" constant="50" id="iuz-zw-Llt"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="4qF-Xa-LBV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-yj-LSn">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4WV-M5-7yP"/>
+                                            <constraint firstAttribute="height" constant="50" id="sOn-Lx-eny"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="AI5-r8-ftE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxL-ii-IgC">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HHS-gH-97D"/>
+                                            <constraint firstAttribute="width" constant="50" id="fLe-Nr-RPU"/>
+                                        </constraints>
+                                        <state key="normal" image="MG_Reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="F5E-lL-gMm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TSh-dy-JTJ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="grq-H7-F8W">
+                                <rect key="frame" x="772" y="29" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcX-fR-7H4">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Nao-vu-4HD"/>
+                                            <constraint firstAttribute="height" constant="40" id="hNy-gI-RRv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="NfO-xo-gQr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCQ-xj-nM9">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Nhs-qC-VlG"/>
+                                            <constraint firstAttribute="width" constant="40" id="jik-V1-RlI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="XXX-uS-DPf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-d1-49z">
+                                        <rect key="frame" x="96" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Dwv-NK-l6B"/>
+                                            <constraint firstAttribute="height" constant="40" id="aPn-P3-nKy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="03" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="hkr-06-682"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sux-il-jUI">
+                                        <rect key="frame" x="144" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Zja-Yh-XjT"/>
+                                            <constraint firstAttribute="height" constant="40" id="cKM-uZ-UO5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="04" backgroundImage="MG_notSelected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="hUl-lG-JJE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V47-jO-18W">
+                                        <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5xg-uy-Dxz"/>
+                                            <constraint firstAttribute="height" constant="40" id="VQh-hn-1hG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="05" backgroundImage="MG_selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifthAction:" destination="gIC-1w-GMp" eventType="touchUpInside" id="Rea-sl-MZq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MG2_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="rUu-04-dGj">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="8ZA-34-k3U"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ru7-wf-Sno" firstAttribute="centerX" secondItem="4hA-f1-LBw" secondAttribute="centerX" id="1DT-eh-QTz"/>
+                            <constraint firstAttribute="trailing" secondItem="grq-H7-F8W" secondAttribute="trailing" constant="20" id="4DC-5T-CMF"/>
+                            <constraint firstItem="rvr-Is-njv" firstAttribute="leading" secondItem="4hA-f1-LBw" secondAttribute="leading" constant="10" id="4nc-JV-RZo"/>
+                            <constraint firstItem="ru7-wf-Sno" firstAttribute="width" secondItem="4hA-f1-LBw" secondAttribute="width" id="7N0-tp-g2s"/>
+                            <constraint firstAttribute="trailing" secondItem="pLD-nS-v3Z" secondAttribute="trailing" constant="10" id="H0i-bX-kXy"/>
+                            <constraint firstItem="rvr-Is-njv" firstAttribute="top" secondItem="4hA-f1-LBw" secondAttribute="top" constant="10" id="HBe-cd-LJk"/>
+                            <constraint firstAttribute="trailing" secondItem="rUu-04-dGj" secondAttribute="trailing" constant="243" id="NyS-fl-ZPe"/>
+                            <constraint firstItem="pLD-nS-v3Z" firstAttribute="top" secondItem="rUu-04-dGj" secondAttribute="bottom" constant="20" id="Oyp-4I-wps"/>
+                            <constraint firstItem="rUu-04-dGj" firstAttribute="centerX" secondItem="4hA-f1-LBw" secondAttribute="centerX" id="Wqv-Ga-urb"/>
+                            <constraint firstItem="ru7-wf-Sno" firstAttribute="centerY" secondItem="4hA-f1-LBw" secondAttribute="centerY" id="YIZ-6J-DGP"/>
+                            <constraint firstItem="XAc-Ie-fSg" firstAttribute="top" secondItem="pLD-nS-v3Z" secondAttribute="bottom" constant="20" id="cxO-Nb-PlE"/>
+                            <constraint firstItem="ru7-wf-Sno" firstAttribute="height" secondItem="4hA-f1-LBw" secondAttribute="height" id="fBq-PE-Wfo"/>
+                            <constraint firstItem="pLD-nS-v3Z" firstAttribute="leading" secondItem="4hA-f1-LBw" secondAttribute="leading" constant="55" id="ghn-99-8WS"/>
+                            <constraint firstItem="grq-H7-F8W" firstAttribute="top" secondItem="qWw-RJ-WCA" secondAttribute="bottom" constant="9" id="h09-zJ-TEZ"/>
+                            <constraint firstItem="rUu-04-dGj" firstAttribute="leading" secondItem="rvr-Is-njv" secondAttribute="trailing" constant="61" id="rNg-Qp-6rS"/>
+                            <constraint firstItem="rUu-04-dGj" firstAttribute="top" secondItem="qWw-RJ-WCA" secondAttribute="bottom" constant="39" id="t3t-yd-Rt7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hqb-4d-1Tj"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="pLD-nS-v3Z" id="Fhi-I6-hGu"/>
+                        <outlet property="logoImage" destination="rUu-04-dGj" id="D90-wA-MB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehP-IL-gLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6625.78125" y="-195.3125"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="0ix-e3-GBu">
+            <objects>
+                <viewController storyboardIdentifier="MG_VideoViewController" id="YiB-L8-MZP" customClass="MG_VideoViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MfC-Gh-pvB"/>
+                        <viewControllerLayoutGuide type="bottom" id="LXA-bk-LAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4tz-Bq-Fug">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6fC-xg-0Vg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="0wA-9N-CNs" kind="show" id="DSZ-Wj-eNI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDe-zs-cGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3232.03125" y="-195.3125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pVd-YT-j1Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWx-SS-VdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bfG-hy-bm3">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YiB-L8-MZP" kind="relationship" relationship="rootViewController" id="Crm-DH-GPO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOH-Gm-HNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2507.8125" y="-195.3125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MG1_Content" width="4108" height="1850"/>
+        <image name="MG1_Logo" width="1801" height="672"/>
+        <image name="MG2.content" width="3938" height="2135"/>
+        <image name="MG2_Logo" width="1801" height="672"/>
+        <image name="MG3_Content" width="3814" height="2135"/>
+        <image name="MG4_Content" width="3805" height="1930"/>
+        <image name="MG5_contentimage" width="3957" height="2014"/>
+        <image name="MG_BG" width="4270" height="3204"/>
+        <image name="MG_Reference" width="200" height="200"/>
+        <image name="MG_edit" width="200" height="200"/>
+        <image name="MG_home" width="200" height="200"/>
+        <image name="MG_notSelected" width="211" height="211"/>
+        <image name="MG_selected" width="211" height="211"/>
+    </resources>
+</document>

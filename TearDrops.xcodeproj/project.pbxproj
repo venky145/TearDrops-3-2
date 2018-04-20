@@ -1,0 +1,1166 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4410F60D208446DD00B6C85A /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410F60C208446DD00B6C85A /* ReferenceView.swift */; };
+		4410F6122084E75200B6C85A /* ReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410F6102084E75200B6C85A /* ReferenceViewController.swift */; };
+		4410F6132084E75200B6C85A /* ReferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4410F6112084E75200B6C85A /* ReferenceViewController.xib */; };
+		4447327E2085886200073DBE /* PenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447327D2085886200073DBE /* PenView.swift */; };
+		444732802085887300073DBE /* PenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4447327F2085887300073DBE /* PenView.xib */; };
+		444732842086410D00073DBE /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444732832086410D00073DBE /* SummaryViewController.swift */; };
+		444732862086858900073DBE /* ViewControllerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444732852086858900073DBE /* ViewControllerObject.swift */; };
+		444732882086897B00073DBE /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444732872086897B00073DBE /* GlobalClass.swift */; };
+		44821075207C592200FA0C1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44821074207C592200FA0C1E /* AppDelegate.swift */; };
+		44821077207C592200FA0C1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44821076207C592200FA0C1E /* ViewController.swift */; };
+		4482107A207C592200FA0C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44821078207C592200FA0C1E /* Main.storyboard */; };
+		4482107D207C592200FA0C1E /* TearDrops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4482107B207C592200FA0C1E /* TearDrops.xcdatamodeld */; };
+		44821082207C592400FA0C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44821080207C592400FA0C1E /* LaunchScreen.storyboard */; };
+		4482108D207C592400FA0C1E /* TearDropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482108C207C592400FA0C1E /* TearDropsTests.swift */; };
+		44821098207C592400FA0C1E /* TearDropsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44821097207C592400FA0C1E /* TearDropsUITests.swift */; };
+		448210A9207C6DD600FA0C1E /* TD_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210A8207C6DD600FA0C1E /* TD_VideoViewController.swift */; };
+		448210AB207C7C4C00FA0C1E /* TD_FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210AA207C7C4C00FA0C1E /* TD_FirstPageViewController.swift */; };
+		448210AD207C7C5D00FA0C1E /* TD_SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210AC207C7C5D00FA0C1E /* TD_SecondPageViewController.swift */; };
+		448210AF207C7C6C00FA0C1E /* TD_ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210AE207C7C6C00FA0C1E /* TD_ThirdPageViewController.swift */; };
+		448210B1207C7C8000FA0C1E /* TD_FourthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210B0207C7C8000FA0C1E /* TD_FourthPageViewController.swift */; };
+		448210B3207C7C9200FA0C1E /* TD_FifthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448210B2207C7C9200FA0C1E /* TD_FifthPageViewController.swift */; };
+		44843B06207F066500C1BAC7 /* TearDropsGel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44843B05207F066500C1BAC7 /* TearDropsGel.storyboard */; };
+		44843B08207F068100C1BAC7 /* TDG_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44843B07207F068100C1BAC7 /* TDG_FirstViewController.swift */; };
+		44843B0A207F069100C1BAC7 /* TDG_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44843B09207F069100C1BAC7 /* TDG_SecondViewController.swift */; };
+		44843B0C207F06A800C1BAC7 /* TDG_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44843B0B207F06A800C1BAC7 /* TDG_ThirdViewController.swift */; };
+		44EDA443208064FA00511243 /* Latoprost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA442208064FA00511243 /* Latoprost.storyboard */; };
+		44EDA4452080655300511243 /* Latocom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4442080655300511243 /* Latocom.storyboard */; };
+		44EDA4472080656B00511243 /* Brimolol.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4462080656B00511243 /* Brimolol.storyboard */; };
+		44EDA4492080658100511243 /* Brimosun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4482080658100511243 /* Brimosun.storyboard */; };
+		44EDA44B2080659E00511243 /* BrimosunP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA44A2080659E00511243 /* BrimosunP.storyboard */; };
+		44EDA44D208065AE00511243 /* Natamet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA44C208065AE00511243 /* Natamet.storyboard */; };
+		44EDA44F208065D100511243 /* TobaF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA44E208065D100511243 /* TobaF.storyboard */; };
+		44EDA451208065DF00511243 /* Toba.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA450208065DF00511243 /* Toba.storyboard */; };
+		44EDA453208065FE00511243 /* MilfloxPlus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA452208065FE00511243 /* MilfloxPlus.storyboard */; };
+		44EDA4552080661E00511243 /* Milflodex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4542080661E00511243 /* Milflodex.storyboard */; };
+		44EDA4572080662C00511243 /* Milflox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4562080662C00511243 /* Milflox.storyboard */; };
+		44EDA4592080663A00511243 /* Megabrom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4582080663A00511243 /* Megabrom.storyboard */; };
+		44EDA45B2080664900511243 /* Gloeye.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA45A2080664900511243 /* Gloeye.storyboard */; };
+		44EDA45D2080665800511243 /* GlyTears.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA45C2080665800511243 /* GlyTears.storyboard */; };
+		44EDA45F2080666800511243 /* NormoTears.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA45E2080666800511243 /* NormoTears.storyboard */; };
+		44EDA47320806F4400511243 /* LProst_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA47220806F4400511243 /* LProst_FirstViewController.swift */; };
+		44EDA4752080B84800511243 /* NT_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4742080B84800511243 /* NT_FirstViewController.swift */; };
+		44EDA4772080B88200511243 /* NT_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4762080B88200511243 /* NT_SecondViewController.swift */; };
+		44EDA4792080B89F00511243 /* NT_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4782080B89F00511243 /* NT_ThirdViewController.swift */; };
+		44EDA47B2080B98A00511243 /* GTears_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA47A2080B98A00511243 /* GTears_FirstViewController.swift */; };
+		44EDA47D2080B99C00511243 /* GTears_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA47C2080B99C00511243 /* GTears_SecondViewController.swift */; };
+		44EDA47F2080B9D900511243 /* GTears_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA47E2080B9D900511243 /* GTears_ThirdViewController.swift */; };
+		44EDA48120820A1000511243 /* GEye_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48020820A1000511243 /* GEye_FirstViewController.swift */; };
+		44EDA48320820A2400511243 /* GEye_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48220820A2400511243 /* GEye_SecondViewController.swift */; };
+		44EDA48520820C7700511243 /* GEye_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48420820C7700511243 /* GEye_ThirdViewController.swift */; };
+		44EDA48720820C8B00511243 /* GEye_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48620820C8B00511243 /* GEye_FourthViewController.swift */; };
+		44EDA48920820C9E00511243 /* GEye_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48820820C9E00511243 /* GEye_VideoViewController.swift */; };
+		44EDA48B2082234A00511243 /* MG_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48A2082234A00511243 /* MG_FirstViewController.swift */; };
+		44EDA48D2082236200511243 /* MG_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48C2082236200511243 /* MG_SecondViewController.swift */; };
+		44EDA48F208223A700511243 /* MG_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA48E208223A700511243 /* MG_ThirdViewController.swift */; };
+		44EDA491208223C700511243 /* MG_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA490208223C700511243 /* MG_FourthViewController.swift */; };
+		44EDA493208223E200511243 /* MG_FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA492208223E200511243 /* MG_FifthViewController.swift */; };
+		44EDA4952082262B00511243 /* MG_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4942082262B00511243 /* MG_VideoViewController.swift */; };
+		44EDA4972082373F00511243 /* MIL_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4962082373F00511243 /* MIL_FirstViewController.swift */; };
+		44EDA4992082375500511243 /* MIL_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4982082375500511243 /* MIL_SecondViewController.swift */; };
+		44EDA49B2082376300511243 /* MIL_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA49A2082376300511243 /* MIL_ThirdViewController.swift */; };
+		44EDA49D2082377500511243 /* MIL_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA49C2082377500511243 /* MIL_FourthViewController.swift */; };
+		44EDA49F2082378400511243 /* MIL_FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA49E2082378400511243 /* MIL_FifthViewController.swift */; };
+		44EDA4A12082385000511243 /* MIL_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4A02082385000511243 /* MIL_VideoViewController.swift */; };
+		44EDA4A32082515000511243 /* MDEX_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4A22082515000511243 /* MDEX_FirstViewController.swift */; };
+		44EDA4A52082516300511243 /* MDEX_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4A42082516300511243 /* MDEX_SecondViewController.swift */; };
+		44EDA4A72082517900511243 /* MDEX_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4A62082517900511243 /* MDEX_ThirdViewController.swift */; };
+		44EDA4A92082518E00511243 /* MDEX_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4A82082518E00511243 /* MDEX_FourthViewController.swift */; };
+		44EDA4AB208251AF00511243 /* MDEX_FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4AA208251AF00511243 /* MDEX_FifthViewController.swift */; };
+		44EDA4AD2082529C00511243 /* MIDEX_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4AC2082529C00511243 /* MIDEX_VideoViewController.swift */; };
+		44EDA4AF2082698000511243 /* MPLUS_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4AE2082698000511243 /* MPLUS_FirstViewController.swift */; };
+		44EDA4B12082698F00511243 /* MPLUS_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4B02082698F00511243 /* MPLUS_SecondViewController.swift */; };
+		44EDA4B3208281DB00511243 /* TobaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4B2208281DB00511243 /* TobaViewController.swift */; };
+		44EDA4B52082847500511243 /* TOBAFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4B42082847500511243 /* TOBAFViewController.swift */; };
+		44EDA4B72082878B00511243 /* NataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4B62082878B00511243 /* NataViewController.swift */; };
+		44EDA4B92082885800511243 /* BrimoPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4B82082885800511243 /* BrimoPViewController.swift */; };
+		44EDA4BB2082889500511243 /* BrimoSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4BA2082889500511243 /* BrimoSViewController.swift */; };
+		44EDA4BD2082F8FF00511243 /* LCOM_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4BC2082F8FF00511243 /* LCOM_FirstViewController.swift */; };
+		44EDA4BF2082F90E00511243 /* LCOM_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4BE2082F90E00511243 /* LCOM_SecondViewController.swift */; };
+		44EDA4C12082F91D00511243 /* LCOM_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4C02082F91D00511243 /* LCOM_ThirdViewController.swift */; };
+		44EDA4C32082FE5B00511243 /* LProst_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4C22082FE5B00511243 /* LProst_SecondViewController.swift */; };
+		44EDA4C52082FE6800511243 /* LProst_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4C42082FE6800511243 /* LProst_ThirdViewController.swift */; };
+		44EDA4C72082FEC200511243 /* LProst_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4C62082FEC200511243 /* LProst_FourthViewController.swift */; };
+		44EDA4C92082FED000511243 /* LProst_FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4C82082FED000511243 /* LProst_FifthViewController.swift */; };
+		44EDA4CB2082FEEB00511243 /* LProst_SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4CA2082FEEB00511243 /* LProst_SixthViewController.swift */; };
+		44EDA4CD2082FEF900511243 /* LProst_SeventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4CC2082FEF900511243 /* LProst_SeventhViewController.swift */; };
+		44EDA4CF2083066300511243 /* LProst_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4CE2083066300511243 /* LProst_VideoViewController.swift */; };
+		44EDA4D22083227E00511243 /* BRIMO_FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4D12083227E00511243 /* BRIMO_FirstViewController.swift */; };
+		44EDA4D42083229300511243 /* BRIMO_SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4D32083229300511243 /* BRIMO_SecondViewController.swift */; };
+		44EDA4D6208322AE00511243 /* BRIMO_ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4D5208322AE00511243 /* BRIMO_ThirdViewController.swift */; };
+		44EDA4D8208322C800511243 /* BRIMO_FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4D7208322C800511243 /* BRIMO_FourthViewController.swift */; };
+		44EDA4DA2083232A00511243 /* BRIMO_FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4D92083232A00511243 /* BRIMO_FifthViewController.swift */; };
+		44EDA4DC2083235100511243 /* BRIMO_SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4DB2083235100511243 /* BRIMO_SixthViewController.swift */; };
+		44EDA4DE2083239500511243 /* BRIMO_VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4DD2083239500511243 /* BRIMO_VideoViewController.swift */; };
+		44EDA4E220837DAE00511243 /* 3_TD_VA_Opener.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4E020837D5700511243 /* 3_TD_VA_Opener.mp4 */; };
+		44EDA4E420839CA800511243 /* Division Opener.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4E320839CA800511243 /* Division Opener.mp4 */; };
+		44EDA4E82083B13C00511243 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4E72083B13B00511243 /* DrawLine.m */; };
+		5B260E152088922300B19010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B260E142088922000B19010 /* Assets.xcassets */; };
+		5B260E162088936E00B19010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B260E142088922000B19010 /* Assets.xcassets */; };
+		5B28A0E4208606320007E35D /* Normotears.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0E3208606320007E35D /* Normotears.mp4 */; };
+		5B28A0E62086082A0007E35D /* Normo_Tears_in.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0E52086082A0007E35D /* Normo_Tears_in.mp4 */; };
+		5B28A0E8208608EB0007E35D /* teardropsgel_in.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0E7208608EA0007E35D /* teardropsgel_in.mp4 */; };
+		5B28A0EF208609D40007E35D /* Milflodex.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0E9208609D30007E35D /* Milflodex.mp4 */; };
+		5B28A0F0208609D40007E35D /* Gloeye.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0EA208609D30007E35D /* Gloeye.mp4 */; };
+		5B28A0F1208609D40007E35D /* Brimolol.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0EB208609D40007E35D /* Brimolol.mp4 */; };
+		5B28A0F2208609D40007E35D /* Latoprost-RT.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0EC208609D40007E35D /* Latoprost-RT.mp4 */; };
+		5B28A0F3208609D40007E35D /* Megabrom.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0ED208609D40007E35D /* Megabrom.mp4 */; };
+		5B28A0F4208609D40007E35D /* Milflox.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0EE208609D40007E35D /* Milflox.mp4 */; };
+		5B28A0F620861D6E0007E35D /* water.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B28A0F520861D6E0007E35D /* water.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44821089207C592400FA0C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44821069207C592200FA0C1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44821070207C592200FA0C1E;
+			remoteInfo = TearDrops;
+		};
+		44821094207C592400FA0C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44821069207C592200FA0C1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44821070207C592200FA0C1E;
+			remoteInfo = TearDrops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4410F60C208446DD00B6C85A /* ReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
+		4410F6102084E75200B6C85A /* ReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceViewController.swift; sourceTree = "<group>"; };
+		4410F6112084E75200B6C85A /* ReferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReferenceViewController.xib; sourceTree = "<group>"; };
+		4447327D2085886200073DBE /* PenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenView.swift; sourceTree = "<group>"; };
+		4447327F2085887300073DBE /* PenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PenView.xib; sourceTree = "<group>"; };
+		444732832086410D00073DBE /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		444732852086858900073DBE /* ViewControllerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerObject.swift; sourceTree = "<group>"; };
+		444732872086897B00073DBE /* GlobalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
+		44821071207C592200FA0C1E /* TearDrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TearDrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44821074207C592200FA0C1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44821076207C592200FA0C1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44821079207C592200FA0C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4482107C207C592200FA0C1E /* TearDrops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TearDrops.xcdatamodel; sourceTree = "<group>"; };
+		44821081207C592400FA0C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44821083207C592400FA0C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44821088207C592400FA0C1E /* TearDropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TearDropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4482108C207C592400FA0C1E /* TearDropsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TearDropsTests.swift; sourceTree = "<group>"; };
+		4482108E207C592400FA0C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44821093207C592400FA0C1E /* TearDropsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TearDropsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44821097207C592400FA0C1E /* TearDropsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TearDropsUITests.swift; sourceTree = "<group>"; };
+		44821099207C592400FA0C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448210A8207C6DD600FA0C1E /* TD_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_VideoViewController.swift; sourceTree = "<group>"; };
+		448210AA207C7C4C00FA0C1E /* TD_FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_FirstPageViewController.swift; sourceTree = "<group>"; };
+		448210AC207C7C5D00FA0C1E /* TD_SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_SecondPageViewController.swift; sourceTree = "<group>"; };
+		448210AE207C7C6C00FA0C1E /* TD_ThirdPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_ThirdPageViewController.swift; sourceTree = "<group>"; };
+		448210B0207C7C8000FA0C1E /* TD_FourthPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_FourthPageViewController.swift; sourceTree = "<group>"; };
+		448210B2207C7C9200FA0C1E /* TD_FifthPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_FifthPageViewController.swift; sourceTree = "<group>"; };
+		44843B05207F066500C1BAC7 /* TearDropsGel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TearDropsGel.storyboard; sourceTree = "<group>"; };
+		44843B07207F068100C1BAC7 /* TDG_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDG_FirstViewController.swift; sourceTree = "<group>"; };
+		44843B09207F069100C1BAC7 /* TDG_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDG_SecondViewController.swift; sourceTree = "<group>"; };
+		44843B0B207F06A800C1BAC7 /* TDG_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDG_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA442208064FA00511243 /* Latoprost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Latoprost.storyboard; sourceTree = "<group>"; };
+		44EDA4442080655300511243 /* Latocom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Latocom.storyboard; sourceTree = "<group>"; };
+		44EDA4462080656B00511243 /* Brimolol.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Brimolol.storyboard; sourceTree = "<group>"; };
+		44EDA4482080658100511243 /* Brimosun.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Brimosun.storyboard; sourceTree = "<group>"; };
+		44EDA44A2080659E00511243 /* BrimosunP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrimosunP.storyboard; sourceTree = "<group>"; };
+		44EDA44C208065AE00511243 /* Natamet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Natamet.storyboard; sourceTree = "<group>"; };
+		44EDA44E208065D100511243 /* TobaF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TobaF.storyboard; sourceTree = "<group>"; };
+		44EDA450208065DF00511243 /* Toba.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toba.storyboard; sourceTree = "<group>"; };
+		44EDA452208065FE00511243 /* MilfloxPlus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MilfloxPlus.storyboard; sourceTree = "<group>"; };
+		44EDA4542080661E00511243 /* Milflodex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Milflodex.storyboard; sourceTree = "<group>"; };
+		44EDA4562080662C00511243 /* Milflox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Milflox.storyboard; sourceTree = "<group>"; };
+		44EDA4582080663A00511243 /* Megabrom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Megabrom.storyboard; sourceTree = "<group>"; };
+		44EDA45A2080664900511243 /* Gloeye.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gloeye.storyboard; sourceTree = "<group>"; };
+		44EDA45C2080665800511243 /* GlyTears.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GlyTears.storyboard; sourceTree = "<group>"; };
+		44EDA45E2080666800511243 /* NormoTears.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NormoTears.storyboard; sourceTree = "<group>"; };
+		44EDA47220806F4400511243 /* LProst_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4742080B84800511243 /* NT_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NT_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4762080B88200511243 /* NT_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NT_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4782080B89F00511243 /* NT_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NT_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA47A2080B98A00511243 /* GTears_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTears_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA47C2080B99C00511243 /* GTears_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTears_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA47E2080B9D900511243 /* GTears_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTears_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA48020820A1000511243 /* GEye_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEye_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA48220820A2400511243 /* GEye_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEye_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA48420820C7700511243 /* GEye_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEye_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA48620820C8B00511243 /* GEye_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEye_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA48820820C9E00511243 /* GEye_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEye_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA48A2082234A00511243 /* MG_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA48C2082236200511243 /* MG_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA48E208223A700511243 /* MG_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA490208223C700511243 /* MG_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA492208223E200511243 /* MG_FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_FifthViewController.swift; sourceTree = "<group>"; };
+		44EDA4942082262B00511243 /* MG_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MG_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA4962082373F00511243 /* MIL_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4982082375500511243 /* MIL_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA49A2082376300511243 /* MIL_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA49C2082377500511243 /* MIL_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA49E2082378400511243 /* MIL_FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_FifthViewController.swift; sourceTree = "<group>"; };
+		44EDA4A02082385000511243 /* MIL_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIL_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA4A22082515000511243 /* MDEX_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEX_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4A42082516300511243 /* MDEX_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEX_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4A62082517900511243 /* MDEX_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEX_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA4A82082518E00511243 /* MDEX_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEX_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA4AA208251AF00511243 /* MDEX_FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEX_FifthViewController.swift; sourceTree = "<group>"; };
+		44EDA4AC2082529C00511243 /* MIDEX_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDEX_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA4AE2082698000511243 /* MPLUS_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLUS_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4B02082698F00511243 /* MPLUS_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLUS_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4B2208281DB00511243 /* TobaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TobaViewController.swift; sourceTree = "<group>"; };
+		44EDA4B42082847500511243 /* TOBAFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOBAFViewController.swift; sourceTree = "<group>"; };
+		44EDA4B62082878B00511243 /* NataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NataViewController.swift; sourceTree = "<group>"; };
+		44EDA4B82082885800511243 /* BrimoPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrimoPViewController.swift; sourceTree = "<group>"; };
+		44EDA4BA2082889500511243 /* BrimoSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrimoSViewController.swift; sourceTree = "<group>"; };
+		44EDA4BC2082F8FF00511243 /* LCOM_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOM_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4BE2082F90E00511243 /* LCOM_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOM_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4C02082F91D00511243 /* LCOM_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOM_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA4C22082FE5B00511243 /* LProst_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4C42082FE6800511243 /* LProst_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA4C62082FEC200511243 /* LProst_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA4C82082FED000511243 /* LProst_FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_FifthViewController.swift; sourceTree = "<group>"; };
+		44EDA4CA2082FEEB00511243 /* LProst_SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_SixthViewController.swift; sourceTree = "<group>"; };
+		44EDA4CC2082FEF900511243 /* LProst_SeventhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_SeventhViewController.swift; sourceTree = "<group>"; };
+		44EDA4CE2083066300511243 /* LProst_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LProst_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA4D12083227E00511243 /* BRIMO_FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_FirstViewController.swift; sourceTree = "<group>"; };
+		44EDA4D32083229300511243 /* BRIMO_SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_SecondViewController.swift; sourceTree = "<group>"; };
+		44EDA4D5208322AE00511243 /* BRIMO_ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_ThirdViewController.swift; sourceTree = "<group>"; };
+		44EDA4D7208322C800511243 /* BRIMO_FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_FourthViewController.swift; sourceTree = "<group>"; };
+		44EDA4D92083232A00511243 /* BRIMO_FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_FifthViewController.swift; sourceTree = "<group>"; };
+		44EDA4DB2083235100511243 /* BRIMO_SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_SixthViewController.swift; sourceTree = "<group>"; };
+		44EDA4DD2083239500511243 /* BRIMO_VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRIMO_VideoViewController.swift; sourceTree = "<group>"; };
+		44EDA4DF208379E000511243 /* 3_TD_VA_Opener.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_TD_VA_Opener.mp4; sourceTree = "<group>"; };
+		44EDA4E020837D5700511243 /* 3_TD_VA_Opener.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3_TD_VA_Opener.mp4; path = TearDrops/TearDrop/3_TD_VA_Opener.mp4; sourceTree = "<group>"; };
+		44EDA4E320839CA800511243 /* Division Opener.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Division Opener.mp4"; sourceTree = "<group>"; };
+		44EDA4E52083B13A00511243 /* TearDrops-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TearDrops-Bridging-Header.h"; sourceTree = "<group>"; };
+		44EDA4E62083B13B00511243 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
+		44EDA4E72083B13B00511243 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
+		5B260E142088922000B19010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B28A0E3208606320007E35D /* Normotears.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Normotears.mp4; sourceTree = "<group>"; };
+		5B28A0E52086082A0007E35D /* Normo_Tears_in.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Normo_Tears_in.mp4; sourceTree = "<group>"; };
+		5B28A0E7208608EA0007E35D /* teardropsgel_in.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = teardropsgel_in.mp4; sourceTree = "<group>"; };
+		5B28A0E9208609D30007E35D /* Milflodex.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milflodex.mp4; sourceTree = "<group>"; };
+		5B28A0EA208609D30007E35D /* Gloeye.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gloeye.mp4; sourceTree = "<group>"; };
+		5B28A0EB208609D40007E35D /* Brimolol.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brimolol.mp4; sourceTree = "<group>"; };
+		5B28A0EC208609D40007E35D /* Latoprost-RT.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Latoprost-RT.mp4"; sourceTree = "<group>"; };
+		5B28A0ED208609D40007E35D /* Megabrom.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Megabrom.mp4; sourceTree = "<group>"; };
+		5B28A0EE208609D40007E35D /* Milflox.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milflox.mp4; sourceTree = "<group>"; };
+		5B28A0F520861D6E0007E35D /* water.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = water.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4482106E207C592200FA0C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44821085207C592400FA0C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44821090207C592400FA0C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44821068207C592200FA0C1E = {
+			isa = PBXGroup;
+			children = (
+				44EDA4E320839CA800511243 /* Division Opener.mp4 */,
+				5B28A0E7208608EA0007E35D /* teardropsgel_in.mp4 */,
+				5B28A0EB208609D40007E35D /* Brimolol.mp4 */,
+				5B28A0EA208609D30007E35D /* Gloeye.mp4 */,
+				5B28A0EC208609D40007E35D /* Latoprost-RT.mp4 */,
+				5B28A0ED208609D40007E35D /* Megabrom.mp4 */,
+				5B28A0E9208609D30007E35D /* Milflodex.mp4 */,
+				5B28A0EE208609D40007E35D /* Milflox.mp4 */,
+				5B28A0E52086082A0007E35D /* Normo_Tears_in.mp4 */,
+				5B28A0E3208606320007E35D /* Normotears.mp4 */,
+				5B28A0F520861D6E0007E35D /* water.gif */,
+				44EDA4E020837D5700511243 /* 3_TD_VA_Opener.mp4 */,
+				44821073207C592200FA0C1E /* TearDrops */,
+				4482108B207C592400FA0C1E /* TearDropsTests */,
+				44821096207C592400FA0C1E /* TearDropsUITests */,
+				44821072207C592200FA0C1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44821072207C592200FA0C1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44821071207C592200FA0C1E /* TearDrops.app */,
+				44821088207C592400FA0C1E /* TearDropsTests.xctest */,
+				44821093207C592400FA0C1E /* TearDropsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44821073207C592200FA0C1E /* TearDrops */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4E62083B13B00511243 /* DrawLine.h */,
+				44EDA4E72083B13B00511243 /* DrawLine.m */,
+				44EDA471208069D100511243 /* NormoTears */,
+				44EDA470208069CE00511243 /* GlyTears */,
+				44EDA46F2080673200511243 /* Gloeye */,
+				44EDA46E2080672F00511243 /* Megabrom */,
+				44EDA46D2080672C00511243 /* Milflox */,
+				44EDA46C2080672900511243 /* Milflodex */,
+				44EDA46B2080672600511243 /* MilfloxPlus */,
+				44EDA4672080670700511243 /* Toba */,
+				44EDA4662080670400511243 /* TobaF */,
+				44EDA4652080670200511243 /* Natamet */,
+				44EDA4642080670000511243 /* BrimosunP */,
+				44EDA463208066FD00511243 /* BrimosunLS */,
+				44EDA462208066C900511243 /* Brimolol */,
+				44EDA4612080669D00511243 /* Latocom */,
+				44EDA4602080668A00511243 /* Latoprost */,
+				44843B04207F064F00C1BAC7 /* Tear Drops Gel */,
+				448210A7207C6D9F00FA0C1E /* TearDrop */,
+				44EDA441208064C600511243 /* UI */,
+				44821074207C592200FA0C1E /* AppDelegate.swift */,
+				44821076207C592200FA0C1E /* ViewController.swift */,
+				44821078207C592200FA0C1E /* Main.storyboard */,
+				4410F60C208446DD00B6C85A /* ReferenceView.swift */,
+				44821080207C592400FA0C1E /* LaunchScreen.storyboard */,
+				44821083207C592400FA0C1E /* Info.plist */,
+				4482107B207C592200FA0C1E /* TearDrops.xcdatamodeld */,
+				44EDA4E52083B13A00511243 /* TearDrops-Bridging-Header.h */,
+			);
+			path = TearDrops;
+			sourceTree = "<group>";
+		};
+		4482108B207C592400FA0C1E /* TearDropsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4482108C207C592400FA0C1E /* TearDropsTests.swift */,
+				4482108E207C592400FA0C1E /* Info.plist */,
+			);
+			path = TearDropsTests;
+			sourceTree = "<group>";
+		};
+		44821096207C592400FA0C1E /* TearDropsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B260E142088922000B19010 /* Assets.xcassets */,
+				44821097207C592400FA0C1E /* TearDropsUITests.swift */,
+				44821099207C592400FA0C1E /* Info.plist */,
+			);
+			path = TearDropsUITests;
+			sourceTree = "<group>";
+		};
+		448210A7207C6D9F00FA0C1E /* TearDrop */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4DF208379E000511243 /* 3_TD_VA_Opener.mp4 */,
+				448210A8207C6DD600FA0C1E /* TD_VideoViewController.swift */,
+				448210AA207C7C4C00FA0C1E /* TD_FirstPageViewController.swift */,
+				448210AC207C7C5D00FA0C1E /* TD_SecondPageViewController.swift */,
+				448210AE207C7C6C00FA0C1E /* TD_ThirdPageViewController.swift */,
+				448210B0207C7C8000FA0C1E /* TD_FourthPageViewController.swift */,
+				448210B2207C7C9200FA0C1E /* TD_FifthPageViewController.swift */,
+			);
+			path = TearDrop;
+			sourceTree = "<group>";
+		};
+		44843B04207F064F00C1BAC7 /* Tear Drops Gel */ = {
+			isa = PBXGroup;
+			children = (
+				44843B05207F066500C1BAC7 /* TearDropsGel.storyboard */,
+				44843B07207F068100C1BAC7 /* TDG_FirstViewController.swift */,
+				44843B09207F069100C1BAC7 /* TDG_SecondViewController.swift */,
+				44843B0B207F06A800C1BAC7 /* TDG_ThirdViewController.swift */,
+			);
+			path = "Tear Drops Gel";
+			sourceTree = "<group>";
+		};
+		44EDA441208064C600511243 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4410F6102084E75200B6C85A /* ReferenceViewController.swift */,
+				4410F6112084E75200B6C85A /* ReferenceViewController.xib */,
+				4447327D2085886200073DBE /* PenView.swift */,
+				4447327F2085887300073DBE /* PenView.xib */,
+				444732832086410D00073DBE /* SummaryViewController.swift */,
+				444732852086858900073DBE /* ViewControllerObject.swift */,
+				444732872086897B00073DBE /* GlobalClass.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		44EDA4602080668A00511243 /* Latoprost */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA442208064FA00511243 /* Latoprost.storyboard */,
+				44EDA4CE2083066300511243 /* LProst_VideoViewController.swift */,
+				44EDA47220806F4400511243 /* LProst_FirstViewController.swift */,
+				44EDA4C22082FE5B00511243 /* LProst_SecondViewController.swift */,
+				44EDA4C42082FE6800511243 /* LProst_ThirdViewController.swift */,
+				44EDA4C62082FEC200511243 /* LProst_FourthViewController.swift */,
+				44EDA4C82082FED000511243 /* LProst_FifthViewController.swift */,
+				44EDA4CA2082FEEB00511243 /* LProst_SixthViewController.swift */,
+				44EDA4CC2082FEF900511243 /* LProst_SeventhViewController.swift */,
+			);
+			path = Latoprost;
+			sourceTree = "<group>";
+		};
+		44EDA4612080669D00511243 /* Latocom */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4442080655300511243 /* Latocom.storyboard */,
+				44EDA4BC2082F8FF00511243 /* LCOM_FirstViewController.swift */,
+				44EDA4BE2082F90E00511243 /* LCOM_SecondViewController.swift */,
+				44EDA4C02082F91D00511243 /* LCOM_ThirdViewController.swift */,
+			);
+			path = Latocom;
+			sourceTree = "<group>";
+		};
+		44EDA462208066C900511243 /* Brimolol */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4462080656B00511243 /* Brimolol.storyboard */,
+				44EDA4D12083227E00511243 /* BRIMO_FirstViewController.swift */,
+				44EDA4D32083229300511243 /* BRIMO_SecondViewController.swift */,
+				44EDA4D5208322AE00511243 /* BRIMO_ThirdViewController.swift */,
+				44EDA4D7208322C800511243 /* BRIMO_FourthViewController.swift */,
+				44EDA4D92083232A00511243 /* BRIMO_FifthViewController.swift */,
+				44EDA4DB2083235100511243 /* BRIMO_SixthViewController.swift */,
+				44EDA4DD2083239500511243 /* BRIMO_VideoViewController.swift */,
+			);
+			path = Brimolol;
+			sourceTree = "<group>";
+		};
+		44EDA463208066FD00511243 /* BrimosunLS */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4482080658100511243 /* Brimosun.storyboard */,
+				44EDA4BA2082889500511243 /* BrimoSViewController.swift */,
+			);
+			path = BrimosunLS;
+			sourceTree = "<group>";
+		};
+		44EDA4642080670000511243 /* BrimosunP */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA44A2080659E00511243 /* BrimosunP.storyboard */,
+				44EDA4B82082885800511243 /* BrimoPViewController.swift */,
+			);
+			path = BrimosunP;
+			sourceTree = "<group>";
+		};
+		44EDA4652080670200511243 /* Natamet */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA44C208065AE00511243 /* Natamet.storyboard */,
+				44EDA4B62082878B00511243 /* NataViewController.swift */,
+			);
+			path = Natamet;
+			sourceTree = "<group>";
+		};
+		44EDA4662080670400511243 /* TobaF */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA44E208065D100511243 /* TobaF.storyboard */,
+				44EDA4B42082847500511243 /* TOBAFViewController.swift */,
+			);
+			path = TobaF;
+			sourceTree = "<group>";
+		};
+		44EDA4672080670700511243 /* Toba */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA450208065DF00511243 /* Toba.storyboard */,
+				44EDA4B2208281DB00511243 /* TobaViewController.swift */,
+			);
+			path = Toba;
+			sourceTree = "<group>";
+		};
+		44EDA46B2080672600511243 /* MilfloxPlus */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA452208065FE00511243 /* MilfloxPlus.storyboard */,
+				44EDA4AE2082698000511243 /* MPLUS_FirstViewController.swift */,
+				44EDA4B02082698F00511243 /* MPLUS_SecondViewController.swift */,
+			);
+			path = MilfloxPlus;
+			sourceTree = "<group>";
+		};
+		44EDA46C2080672900511243 /* Milflodex */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4542080661E00511243 /* Milflodex.storyboard */,
+				44EDA4AC2082529C00511243 /* MIDEX_VideoViewController.swift */,
+				44EDA4A22082515000511243 /* MDEX_FirstViewController.swift */,
+				44EDA4A42082516300511243 /* MDEX_SecondViewController.swift */,
+				44EDA4A62082517900511243 /* MDEX_ThirdViewController.swift */,
+				44EDA4A82082518E00511243 /* MDEX_FourthViewController.swift */,
+				44EDA4AA208251AF00511243 /* MDEX_FifthViewController.swift */,
+			);
+			path = Milflodex;
+			sourceTree = "<group>";
+		};
+		44EDA46D2080672C00511243 /* Milflox */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4562080662C00511243 /* Milflox.storyboard */,
+				44EDA4A02082385000511243 /* MIL_VideoViewController.swift */,
+				44EDA4962082373F00511243 /* MIL_FirstViewController.swift */,
+				44EDA4982082375500511243 /* MIL_SecondViewController.swift */,
+				44EDA49A2082376300511243 /* MIL_ThirdViewController.swift */,
+				44EDA49C2082377500511243 /* MIL_FourthViewController.swift */,
+				44EDA49E2082378400511243 /* MIL_FifthViewController.swift */,
+			);
+			path = Milflox;
+			sourceTree = "<group>";
+		};
+		44EDA46E2080672F00511243 /* Megabrom */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA4582080663A00511243 /* Megabrom.storyboard */,
+				44EDA4942082262B00511243 /* MG_VideoViewController.swift */,
+				44EDA48A2082234A00511243 /* MG_FirstViewController.swift */,
+				44EDA48C2082236200511243 /* MG_SecondViewController.swift */,
+				44EDA48E208223A700511243 /* MG_ThirdViewController.swift */,
+				44EDA490208223C700511243 /* MG_FourthViewController.swift */,
+				44EDA492208223E200511243 /* MG_FifthViewController.swift */,
+			);
+			path = Megabrom;
+			sourceTree = "<group>";
+		};
+		44EDA46F2080673200511243 /* Gloeye */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA45A2080664900511243 /* Gloeye.storyboard */,
+				44EDA48820820C9E00511243 /* GEye_VideoViewController.swift */,
+				44EDA48020820A1000511243 /* GEye_FirstViewController.swift */,
+				44EDA48220820A2400511243 /* GEye_SecondViewController.swift */,
+				44EDA48420820C7700511243 /* GEye_ThirdViewController.swift */,
+				44EDA48620820C8B00511243 /* GEye_FourthViewController.swift */,
+			);
+			path = Gloeye;
+			sourceTree = "<group>";
+		};
+		44EDA470208069CE00511243 /* GlyTears */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA45C2080665800511243 /* GlyTears.storyboard */,
+				44EDA47A2080B98A00511243 /* GTears_FirstViewController.swift */,
+				44EDA47C2080B99C00511243 /* GTears_SecondViewController.swift */,
+				44EDA47E2080B9D900511243 /* GTears_ThirdViewController.swift */,
+			);
+			path = GlyTears;
+			sourceTree = "<group>";
+		};
+		44EDA471208069D100511243 /* NormoTears */ = {
+			isa = PBXGroup;
+			children = (
+				44EDA45E2080666800511243 /* NormoTears.storyboard */,
+				44EDA4742080B84800511243 /* NT_FirstViewController.swift */,
+				44EDA4762080B88200511243 /* NT_SecondViewController.swift */,
+				44EDA4782080B89F00511243 /* NT_ThirdViewController.swift */,
+			);
+			path = NormoTears;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44821070207C592200FA0C1E /* TearDrops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4482109C207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDrops" */;
+			buildPhases = (
+				4482106D207C592200FA0C1E /* Sources */,
+				4482106E207C592200FA0C1E /* Frameworks */,
+				4482106F207C592200FA0C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TearDrops;
+			productName = TearDrops;
+			productReference = 44821071207C592200FA0C1E /* TearDrops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44821087207C592400FA0C1E /* TearDropsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4482109F207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsTests" */;
+			buildPhases = (
+				44821084207C592400FA0C1E /* Sources */,
+				44821085207C592400FA0C1E /* Frameworks */,
+				44821086207C592400FA0C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4482108A207C592400FA0C1E /* PBXTargetDependency */,
+			);
+			name = TearDropsTests;
+			productName = TearDropsTests;
+			productReference = 44821088207C592400FA0C1E /* TearDropsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44821092207C592400FA0C1E /* TearDropsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 448210A2207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsUITests" */;
+			buildPhases = (
+				4482108F207C592400FA0C1E /* Sources */,
+				44821090207C592400FA0C1E /* Frameworks */,
+				44821091207C592400FA0C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44821095207C592400FA0C1E /* PBXTargetDependency */,
+			);
+			name = TearDropsUITests;
+			productName = TearDropsUITests;
+			productReference = 44821093207C592400FA0C1E /* TearDropsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44821069207C592200FA0C1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Venky;
+				TargetAttributes = {
+					44821070207C592200FA0C1E = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					44821087207C592400FA0C1E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 44821070207C592200FA0C1E;
+					};
+					44821092207C592400FA0C1E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 44821070207C592200FA0C1E;
+					};
+				};
+			};
+			buildConfigurationList = 4482106C207C592200FA0C1E /* Build configuration list for PBXProject "TearDrops" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44821068207C592200FA0C1E;
+			productRefGroup = 44821072207C592200FA0C1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44821070207C592200FA0C1E /* TearDrops */,
+				44821087207C592400FA0C1E /* TearDropsTests */,
+				44821092207C592400FA0C1E /* TearDropsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4482106F207C592200FA0C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4410F6132084E75200B6C85A /* ReferenceViewController.xib in Resources */,
+				44EDA4E420839CA800511243 /* Division Opener.mp4 in Resources */,
+				5B28A0F1208609D40007E35D /* Brimolol.mp4 in Resources */,
+				5B28A0F0208609D40007E35D /* Gloeye.mp4 in Resources */,
+				44EDA4E220837DAE00511243 /* 3_TD_VA_Opener.mp4 in Resources */,
+				5B28A0F4208609D40007E35D /* Milflox.mp4 in Resources */,
+				44EDA4452080655300511243 /* Latocom.storyboard in Resources */,
+				44EDA453208065FE00511243 /* MilfloxPlus.storyboard in Resources */,
+				5B28A0F620861D6E0007E35D /* water.gif in Resources */,
+				44EDA4572080662C00511243 /* Milflox.storyboard in Resources */,
+				44EDA4492080658100511243 /* Brimosun.storyboard in Resources */,
+				5B28A0E4208606320007E35D /* Normotears.mp4 in Resources */,
+				44EDA4592080663A00511243 /* Megabrom.storyboard in Resources */,
+				5B260E162088936E00B19010 /* Assets.xcassets in Resources */,
+				44821082207C592400FA0C1E /* LaunchScreen.storyboard in Resources */,
+				5B28A0F2208609D40007E35D /* Latoprost-RT.mp4 in Resources */,
+				5B28A0E8208608EB0007E35D /* teardropsgel_in.mp4 in Resources */,
+				44EDA44F208065D100511243 /* TobaF.storyboard in Resources */,
+				44EDA44D208065AE00511243 /* Natamet.storyboard in Resources */,
+				5B28A0EF208609D40007E35D /* Milflodex.mp4 in Resources */,
+				44843B06207F066500C1BAC7 /* TearDropsGel.storyboard in Resources */,
+				44EDA45F2080666800511243 /* NormoTears.storyboard in Resources */,
+				44EDA45B2080664900511243 /* Gloeye.storyboard in Resources */,
+				5B28A0E62086082A0007E35D /* Normo_Tears_in.mp4 in Resources */,
+				44EDA443208064FA00511243 /* Latoprost.storyboard in Resources */,
+				44EDA451208065DF00511243 /* Toba.storyboard in Resources */,
+				4482107A207C592200FA0C1E /* Main.storyboard in Resources */,
+				44EDA4472080656B00511243 /* Brimolol.storyboard in Resources */,
+				444732802085887300073DBE /* PenView.xib in Resources */,
+				5B28A0F3208609D40007E35D /* Megabrom.mp4 in Resources */,
+				44EDA45D2080665800511243 /* GlyTears.storyboard in Resources */,
+				44EDA44B2080659E00511243 /* BrimosunP.storyboard in Resources */,
+				44EDA4552080661E00511243 /* Milflodex.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44821086207C592400FA0C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44821091207C592400FA0C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B260E152088922300B19010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4482106D207C592200FA0C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EDA48920820C9E00511243 /* GEye_VideoViewController.swift in Sources */,
+				44EDA4B52082847500511243 /* TOBAFViewController.swift in Sources */,
+				44EDA4DA2083232A00511243 /* BRIMO_FifthViewController.swift in Sources */,
+				44EDA4CD2082FEF900511243 /* LProst_SeventhViewController.swift in Sources */,
+				44EDA4B3208281DB00511243 /* TobaViewController.swift in Sources */,
+				44843B0C207F06A800C1BAC7 /* TDG_ThirdViewController.swift in Sources */,
+				44EDA4CB2082FEEB00511243 /* LProst_SixthViewController.swift in Sources */,
+				448210B3207C7C9200FA0C1E /* TD_FifthPageViewController.swift in Sources */,
+				44EDA4B72082878B00511243 /* NataViewController.swift in Sources */,
+				44EDA4DC2083235100511243 /* BRIMO_SixthViewController.swift in Sources */,
+				44EDA4E82083B13C00511243 /* DrawLine.m in Sources */,
+				44EDA4D6208322AE00511243 /* BRIMO_ThirdViewController.swift in Sources */,
+				44EDA49B2082376300511243 /* MIL_ThirdViewController.swift in Sources */,
+				44EDA4BB2082889500511243 /* BrimoSViewController.swift in Sources */,
+				44EDA4A52082516300511243 /* MDEX_SecondViewController.swift in Sources */,
+				44EDA4DE2083239500511243 /* BRIMO_VideoViewController.swift in Sources */,
+				44EDA4792080B89F00511243 /* NT_ThirdViewController.swift in Sources */,
+				44EDA4A32082515000511243 /* MDEX_FirstViewController.swift in Sources */,
+				44EDA4C32082FE5B00511243 /* LProst_SecondViewController.swift in Sources */,
+				444732862086858900073DBE /* ViewControllerObject.swift in Sources */,
+				44EDA4D42083229300511243 /* BRIMO_SecondViewController.swift in Sources */,
+				44EDA4BF2082F90E00511243 /* LCOM_SecondViewController.swift in Sources */,
+				44EDA4772080B88200511243 /* NT_SecondViewController.swift in Sources */,
+				44EDA4C12082F91D00511243 /* LCOM_ThirdViewController.swift in Sources */,
+				44EDA48B2082234A00511243 /* MG_FirstViewController.swift in Sources */,
+				444732842086410D00073DBE /* SummaryViewController.swift in Sources */,
+				44EDA48D2082236200511243 /* MG_SecondViewController.swift in Sources */,
+				44EDA4B92082885800511243 /* BrimoPViewController.swift in Sources */,
+				448210A9207C6DD600FA0C1E /* TD_VideoViewController.swift in Sources */,
+				44EDA4BD2082F8FF00511243 /* LCOM_FirstViewController.swift in Sources */,
+				4410F60D208446DD00B6C85A /* ReferenceView.swift in Sources */,
+				44EDA49D2082377500511243 /* MIL_FourthViewController.swift in Sources */,
+				44EDA493208223E200511243 /* MG_FifthViewController.swift in Sources */,
+				44EDA4A12082385000511243 /* MIL_VideoViewController.swift in Sources */,
+				44EDA4AD2082529C00511243 /* MIDEX_VideoViewController.swift in Sources */,
+				44EDA47F2080B9D900511243 /* GTears_ThirdViewController.swift in Sources */,
+				44EDA49F2082378400511243 /* MIL_FifthViewController.swift in Sources */,
+				448210AD207C7C5D00FA0C1E /* TD_SecondPageViewController.swift in Sources */,
+				444732882086897B00073DBE /* GlobalClass.swift in Sources */,
+				44843B0A207F069100C1BAC7 /* TDG_SecondViewController.swift in Sources */,
+				44EDA4752080B84800511243 /* NT_FirstViewController.swift in Sources */,
+				448210AB207C7C4C00FA0C1E /* TD_FirstPageViewController.swift in Sources */,
+				44EDA4CF2083066300511243 /* LProst_VideoViewController.swift in Sources */,
+				44EDA4D22083227E00511243 /* BRIMO_FirstViewController.swift in Sources */,
+				44EDA4C52082FE6800511243 /* LProst_ThirdViewController.swift in Sources */,
+				4482107D207C592200FA0C1E /* TearDrops.xcdatamodeld in Sources */,
+				44EDA491208223C700511243 /* MG_FourthViewController.swift in Sources */,
+				44EDA4D8208322C800511243 /* BRIMO_FourthViewController.swift in Sources */,
+				4410F6122084E75200B6C85A /* ReferenceViewController.swift in Sources */,
+				44EDA4A92082518E00511243 /* MDEX_FourthViewController.swift in Sources */,
+				448210AF207C7C6C00FA0C1E /* TD_ThirdPageViewController.swift in Sources */,
+				44EDA47B2080B98A00511243 /* GTears_FirstViewController.swift in Sources */,
+				44EDA4C72082FEC200511243 /* LProst_FourthViewController.swift in Sources */,
+				44EDA48F208223A700511243 /* MG_ThirdViewController.swift in Sources */,
+				44EDA48120820A1000511243 /* GEye_FirstViewController.swift in Sources */,
+				44EDA4972082373F00511243 /* MIL_FirstViewController.swift in Sources */,
+				44EDA4992082375500511243 /* MIL_SecondViewController.swift in Sources */,
+				4447327E2085886200073DBE /* PenView.swift in Sources */,
+				44EDA47D2080B99C00511243 /* GTears_SecondViewController.swift in Sources */,
+				44EDA47320806F4400511243 /* LProst_FirstViewController.swift in Sources */,
+				44EDA4AF2082698000511243 /* MPLUS_FirstViewController.swift in Sources */,
+				44EDA4C92082FED000511243 /* LProst_FifthViewController.swift in Sources */,
+				44EDA4A72082517900511243 /* MDEX_ThirdViewController.swift in Sources */,
+				448210B1207C7C8000FA0C1E /* TD_FourthPageViewController.swift in Sources */,
+				44843B08207F068100C1BAC7 /* TDG_FirstViewController.swift in Sources */,
+				44EDA4B12082698F00511243 /* MPLUS_SecondViewController.swift in Sources */,
+				44EDA4952082262B00511243 /* MG_VideoViewController.swift in Sources */,
+				44EDA48520820C7700511243 /* GEye_ThirdViewController.swift in Sources */,
+				44EDA48720820C8B00511243 /* GEye_FourthViewController.swift in Sources */,
+				44EDA48320820A2400511243 /* GEye_SecondViewController.swift in Sources */,
+				44821077207C592200FA0C1E /* ViewController.swift in Sources */,
+				44EDA4AB208251AF00511243 /* MDEX_FifthViewController.swift in Sources */,
+				44821075207C592200FA0C1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44821084207C592400FA0C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4482108D207C592400FA0C1E /* TearDropsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4482108F207C592400FA0C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44821098207C592400FA0C1E /* TearDropsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4482108A207C592400FA0C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44821070207C592200FA0C1E /* TearDrops */;
+			targetProxy = 44821089207C592400FA0C1E /* PBXContainerItemProxy */;
+		};
+		44821095207C592400FA0C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44821070207C592200FA0C1E /* TearDrops */;
+			targetProxy = 44821094207C592400FA0C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44821078207C592200FA0C1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44821079207C592200FA0C1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44821080207C592400FA0C1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44821081207C592400FA0C1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4482109A207C592400FA0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4482109B207C592400FA0C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4482109D207C592400FA0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X52J6MQH98;
+				INFOPLIST_FILE = TearDrops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digiaplus.Milmeteva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TearDrops/TearDrops-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4482109E207C592400FA0C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X52J6MQH98;
+				INFOPLIST_FILE = TearDrops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digiaplus.Milmeteva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TearDrops/TearDrops-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		448210A0207C592400FA0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
+				INFOPLIST_FILE = TearDropsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TearDrops.app/TearDrops";
+			};
+			name = Debug;
+		};
+		448210A1207C592400FA0C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
+				INFOPLIST_FILE = TearDropsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TearDrops.app/TearDrops";
+			};
+			name = Release;
+		};
+		448210A3207C592400FA0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
+				INFOPLIST_FILE = TearDropsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TearDrops;
+			};
+			name = Debug;
+		};
+		448210A4207C592400FA0C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBKQWSD5GW;
+				INFOPLIST_FILE = TearDropsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Venky.TearDropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TearDrops;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4482106C207C592200FA0C1E /* Build configuration list for PBXProject "TearDrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4482109A207C592400FA0C1E /* Debug */,
+				4482109B207C592400FA0C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4482109C207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4482109D207C592400FA0C1E /* Debug */,
+				4482109E207C592400FA0C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4482109F207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448210A0207C592400FA0C1E /* Debug */,
+				448210A1207C592400FA0C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		448210A2207C592400FA0C1E /* Build configuration list for PBXNativeTarget "TearDropsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448210A3207C592400FA0C1E /* Debug */,
+				448210A4207C592400FA0C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4482107B207C592200FA0C1E /* TearDrops.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4482107C207C592200FA0C1E /* TearDrops.xcdatamodel */,
+			);
+			currentVersion = 4482107C207C592200FA0C1E /* TearDrops.xcdatamodel */;
+			path = TearDrops.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44821069207C592200FA0C1E /* Project object */;
+}

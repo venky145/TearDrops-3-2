@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tears First View Controller-->
+        <scene sceneID="OxZ-Uj-rGF">
+            <objects>
+                <viewController storyboardIdentifier="GTears_FirstViewController" id="uTD-I3-fKk" customClass="GTears_FirstViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Kr-35-1JI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Quq-s9-Wzd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DEl-FJ-P5n">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY_BG" translatesAutoresizingMaskIntoConstraints="NO" id="kNk-o5-GMS">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-af-1cA">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hF-Nf-cb6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="AM7-P6-H19"/>
+                                            <constraint firstAttribute="width" constant="50" id="cKy-jo-tWG"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="uTD-I3-fKk" eventType="touchUpInside" id="sqw-LG-9OO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-Xf-1bp">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jHx-ZY-EUf"/>
+                                            <constraint firstAttribute="width" constant="50" id="xdu-4v-89B"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="uTD-I3-fKk" eventType="touchUpInside" id="7ag-KT-f2s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYd-Ir-rLS">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KMB-4s-ThE"/>
+                                            <constraint firstAttribute="width" constant="50" id="ioM-p9-mbx"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="uTD-I3-fKk" eventType="touchUpInside" id="YRG-JX-uEw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XjC-wy-BYk"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XKX-UH-Yh3">
+                                <rect key="frame" x="0.0" y="96" width="1024" height="672"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Quq-s9-Wzd" firstAttribute="top" secondItem="XKX-UH-Yh3" secondAttribute="bottom" id="1S0-5W-ZaZ"/>
+                            <constraint firstItem="XKX-UH-Yh3" firstAttribute="leading" secondItem="DEl-FJ-P5n" secondAttribute="leading" id="32o-ZE-RDo"/>
+                            <constraint firstItem="kNk-o5-GMS" firstAttribute="centerX" secondItem="DEl-FJ-P5n" secondAttribute="centerX" id="5ma-gm-5Lf"/>
+                            <constraint firstAttribute="trailing" secondItem="XKX-UH-Yh3" secondAttribute="trailing" id="AfD-ZE-B1C"/>
+                            <constraint firstItem="xcp-af-1cA" firstAttribute="leading" secondItem="DEl-FJ-P5n" secondAttribute="leading" constant="10" id="Lcw-an-Hlc"/>
+                            <constraint firstItem="kNk-o5-GMS" firstAttribute="width" secondItem="DEl-FJ-P5n" secondAttribute="width" id="MaM-4a-yn9"/>
+                            <constraint firstItem="XKX-UH-Yh3" firstAttribute="top" secondItem="xcp-af-1cA" secondAttribute="bottom" constant="36" id="Mot-1M-Z4a"/>
+                            <constraint firstItem="xcp-af-1cA" firstAttribute="top" secondItem="DEl-FJ-P5n" secondAttribute="top" constant="10" id="pOZ-uC-KRC"/>
+                            <constraint firstItem="kNk-o5-GMS" firstAttribute="centerY" secondItem="DEl-FJ-P5n" secondAttribute="centerY" id="qly-fl-ZA7"/>
+                            <constraint firstItem="kNk-o5-GMS" firstAttribute="height" secondItem="DEl-FJ-P5n" secondAttribute="height" id="vK4-M3-47K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dwh-uc-vgs"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mainImage" destination="XKX-UH-Yh3" id="MVt-jq-fxZ"/>
+                        <segue destination="dOk-HS-hkg" kind="show" id="pGt-uk-Mi0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKo-hT-qTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932.7964860907759" y="128.90625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="egz-s1-xJ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3A8-vb-8zl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K6E-ai-5bV">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uTD-I3-fKk" kind="relationship" relationship="rootViewController" id="hIT-8x-Syq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Td-ui-S4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239.6778916544654" y="128.90625"/>
+        </scene>
+        <!--Tears Second View Controller-->
+        <scene sceneID="i0M-90-GrR">
+            <objects>
+                <viewController storyboardIdentifier="GTears_SecondViewController" id="dOk-HS-hkg" customClass="GTears_SecondViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uy5-qG-ZKc"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8Q-fq-B69"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NsQ-wv-QBY">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY_BG" translatesAutoresizingMaskIntoConstraints="NO" id="39G-IG-HbD">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-dE-Ihk">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu5-4f-Oqy">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PAq-cM-7aY"/>
+                                            <constraint firstAttribute="width" constant="50" id="oO9-eC-Xo4"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="dOk-HS-hkg" eventType="touchUpInside" id="BsH-U6-bzY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-KW-qAw">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="44S-10-Tvh"/>
+                                            <constraint firstAttribute="height" constant="50" id="Zc7-ID-LuX"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="dOk-HS-hkg" eventType="touchUpInside" id="33r-oO-aS6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-dy-neP">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Z4q-pq-vD5"/>
+                                            <constraint firstAttribute="height" constant="50" id="aKg-Qv-feg"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="dOk-HS-hkg" eventType="touchUpInside" id="HO0-27-eXD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KwS-n3-BUP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P9o-em-WrW">
+                                <rect key="frame" x="916" y="29" width="88" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0M-5U-oee">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QtB-TC-3ch"/>
+                                            <constraint firstAttribute="width" constant="40" id="jdm-H4-ao4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="GLY_page button 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="dOk-HS-hkg" eventType="touchUpInside" id="M8y-zc-KYf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bc-qO-q5N">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7bs-GZ-baZ"/>
+                                            <constraint firstAttribute="width" constant="40" id="AsQ-Lk-PsO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="GLY_page button 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="dOk-HS-hkg" eventType="touchUpInside" id="hFM-Qd-tbV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY1_Content" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-uQ-fSA">
+                                <rect key="frame" x="40" y="247" width="980" height="479"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="479" id="EU4-0I-2Bo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY1_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cXT-Od-t2O">
+                                <rect key="frame" x="260" y="56" width="549" height="175"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P9o-em-WrW" firstAttribute="leading" secondItem="cXT-Od-t2O" secondAttribute="trailing" constant="107" id="30o-Ck-CxK"/>
+                            <constraint firstItem="dZe-uQ-fSA" firstAttribute="top" secondItem="cXT-Od-t2O" secondAttribute="bottom" constant="16" id="3Bw-tB-FeV"/>
+                            <constraint firstItem="dZe-uQ-fSA" firstAttribute="leading" secondItem="NsQ-wv-QBY" secondAttribute="leading" constant="40" id="5vU-Rb-5ru"/>
+                            <constraint firstAttribute="trailing" secondItem="dZe-uQ-fSA" secondAttribute="trailing" constant="4" id="7Mf-4J-AsZ"/>
+                            <constraint firstItem="cXT-Od-t2O" firstAttribute="leading" secondItem="Alb-dE-Ihk" secondAttribute="trailing" constant="78" id="7t2-hE-PtF"/>
+                            <constraint firstItem="39G-IG-HbD" firstAttribute="centerY" secondItem="NsQ-wv-QBY" secondAttribute="centerY" id="Bza-9j-P3k"/>
+                            <constraint firstItem="P9o-em-WrW" firstAttribute="top" secondItem="Uy5-qG-ZKc" secondAttribute="bottom" constant="9" id="INm-py-CKm"/>
+                            <constraint firstItem="b8Q-fq-B69" firstAttribute="top" secondItem="dZe-uQ-fSA" secondAttribute="bottom" constant="42" id="WZs-n3-ctt"/>
+                            <constraint firstItem="cXT-Od-t2O" firstAttribute="top" secondItem="Uy5-qG-ZKc" secondAttribute="bottom" constant="36" id="kDE-zJ-fH2"/>
+                            <constraint firstItem="Alb-dE-Ihk" firstAttribute="top" secondItem="NsQ-wv-QBY" secondAttribute="top" constant="10" id="kOg-Hc-s1y"/>
+                            <constraint firstItem="39G-IG-HbD" firstAttribute="width" secondItem="NsQ-wv-QBY" secondAttribute="width" id="mX8-nb-yoo"/>
+                            <constraint firstItem="39G-IG-HbD" firstAttribute="centerX" secondItem="NsQ-wv-QBY" secondAttribute="centerX" id="u7W-7e-Wbu"/>
+                            <constraint firstAttribute="trailing" secondItem="P9o-em-WrW" secondAttribute="trailing" constant="20" id="ve2-NF-Q90"/>
+                            <constraint firstItem="Alb-dE-Ihk" firstAttribute="leading" secondItem="NsQ-wv-QBY" secondAttribute="leading" constant="10" id="xmb-Fu-f8g"/>
+                            <constraint firstItem="39G-IG-HbD" firstAttribute="height" secondItem="NsQ-wv-QBY" secondAttribute="height" id="zCD-Yn-hoA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Z9-Sy-7dU"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="dZe-uQ-fSA" id="2CQ-UN-zms"/>
+                        <outlet property="logoImage" destination="cXT-Od-t2O" id="eDy-ca-kY3"/>
+                        <segue destination="Brb-Ht-gT4" kind="show" id="M93-MN-hMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fx9-RS-RPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3562.4999999999995" y="142.96875"/>
+        </scene>
+        <!--Tears Third View Controller-->
+        <scene sceneID="ciE-lP-aPy">
+            <objects>
+                <viewController storyboardIdentifier="GTears_ThirdViewController" id="Brb-Ht-gT4" customClass="GTears_ThirdViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hJg-fn-hDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="JjV-Au-vk2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ugn-48-iXb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY_BG" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-g0-tlf">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="czb-8u-68u">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ6-r0-4Wd">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="U64-fJ-xzI"/>
+                                            <constraint firstAttribute="height" constant="50" id="y8l-eT-xLa"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_home"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="Brb-Ht-gT4" eventType="touchUpInside" id="CKe-Fu-7sL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz1-BX-TST">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="RKm-Sd-ppM"/>
+                                            <constraint firstAttribute="height" constant="50" id="zRi-Ap-ORk"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_edit"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="Brb-Ht-gT4" eventType="touchUpInside" id="cLI-NA-wrp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVm-wA-8xT">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="C1f-cl-3Vo"/>
+                                            <constraint firstAttribute="width" constant="50" id="zfZ-vA-m2k"/>
+                                        </constraints>
+                                        <state key="normal" image="GLY_reference"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="Brb-Ht-gT4" eventType="touchUpInside" id="vNc-Z7-lS4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tGe-Qi-H5a"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-IY-Xsi">
+                                <rect key="frame" x="916" y="29" width="88" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKk-5t-rzm">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="43u-Sm-Sui"/>
+                                            <constraint firstAttribute="height" constant="40" id="aJC-WP-j89"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="GLY_page button 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="Brb-Ht-gT4" eventType="touchUpInside" id="grG-kV-cnk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOv-AG-Pzy">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Izb-Wm-h32"/>
+                                            <constraint firstAttribute="height" constant="40" id="emz-lr-Kje"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="02" backgroundImage="GLY_page button 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondAction:" destination="Brb-Ht-gT4" eventType="touchUpInside" id="ekC-MO-G8i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY2_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="iuj-Kv-1KO">
+                                <rect key="frame" x="260" y="56" width="544" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="hXc-gZ-BpV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLY2_Content" translatesAutoresizingMaskIntoConstraints="NO" id="DP9-Zj-bIx">
+                                <rect key="frame" x="42" y="324" width="951" height="308"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bottom Button" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-f5-Kbe">
+                                <rect key="frame" x="703" y="659" width="298" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="6Am-bk-qst"/>
+                                    <constraint firstAttribute="height" constant="68" id="COK-qq-YFP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JZI-f5-Kbe" secondAttribute="trailing" constant="3" id="DfH-1z-ikz"/>
+                            <constraint firstItem="DP9-Zj-bIx" firstAttribute="top" secondItem="iuj-Kv-1KO" secondAttribute="bottom" constant="93" id="EJl-eG-s4B"/>
+                            <constraint firstItem="JZI-f5-Kbe" firstAttribute="leading" secondItem="Ugn-48-iXb" secondAttribute="leadingMargin" constant="683" id="ERF-7G-jhY"/>
+                            <constraint firstItem="czb-8u-68u" firstAttribute="top" secondItem="Ugn-48-iXb" secondAttribute="top" constant="10" id="GBa-tR-QPI"/>
+                            <constraint firstItem="DP9-Zj-bIx" firstAttribute="leading" secondItem="Ugn-48-iXb" secondAttribute="leading" constant="42" id="GWI-SY-6FJ"/>
+                            <constraint firstItem="hbQ-g0-tlf" firstAttribute="centerY" secondItem="Ugn-48-iXb" secondAttribute="centerY" id="I4U-Ig-XnU"/>
+                            <constraint firstItem="iuj-Kv-1KO" firstAttribute="leading" secondItem="czb-8u-68u" secondAttribute="trailing" constant="78" id="KH6-KZ-e8h"/>
+                            <constraint firstItem="czb-8u-68u" firstAttribute="leading" secondItem="Ugn-48-iXb" secondAttribute="leading" constant="10" id="LfT-H4-JcA"/>
+                            <constraint firstItem="hbQ-g0-tlf" firstAttribute="height" secondItem="Ugn-48-iXb" secondAttribute="height" id="OnB-gB-S7g"/>
+                            <constraint firstItem="iuj-Kv-1KO" firstAttribute="top" secondItem="hJg-fn-hDg" secondAttribute="bottom" constant="36" id="TFh-ND-w2v"/>
+                            <constraint firstItem="JjV-Au-vk2" firstAttribute="top" secondItem="JZI-f5-Kbe" secondAttribute="bottom" constant="41" id="ZD8-sj-7gY"/>
+                            <constraint firstAttribute="trailing" secondItem="DP9-Zj-bIx" secondAttribute="trailing" constant="31" id="hDg-Jj-CLw"/>
+                            <constraint firstItem="JZI-f5-Kbe" firstAttribute="top" secondItem="DP9-Zj-bIx" secondAttribute="bottom" constant="27" id="je5-Z6-t6p"/>
+                            <constraint firstItem="hbQ-g0-tlf" firstAttribute="width" secondItem="Ugn-48-iXb" secondAttribute="width" id="jiS-A0-ur1"/>
+                            <constraint firstItem="gH2-IY-Xsi" firstAttribute="top" secondItem="hJg-fn-hDg" secondAttribute="bottom" constant="9" id="koP-v8-9KF"/>
+                            <constraint firstAttribute="trailing" secondItem="gH2-IY-Xsi" secondAttribute="trailing" constant="20" id="lN1-ef-FTL"/>
+                            <constraint firstItem="gH2-IY-Xsi" firstAttribute="leading" secondItem="iuj-Kv-1KO" secondAttribute="trailing" constant="112" id="lqQ-Zs-rqM"/>
+                            <constraint firstItem="hbQ-g0-tlf" firstAttribute="centerX" secondItem="Ugn-48-iXb" secondAttribute="centerX" id="rad-Un-wdl"/>
+                            <constraint firstItem="JjV-Au-vk2" firstAttribute="top" secondItem="DP9-Zj-bIx" secondAttribute="bottom" constant="136" id="zlQ-x6-jYr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G5r-1i-qbN"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="botom" destination="JZI-f5-Kbe" id="iFf-l9-D0P"/>
+                        <outlet property="contentImage" destination="DP9-Zj-bIx" id="vZw-IB-4Wu"/>
+                        <outlet property="logoImage" destination="iuj-Kv-1KO" id="kND-IE-R5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2c-1K-9t6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4237.5" y="143.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bottom Button" width="1435" height="292"/>
+        <image name="GLY1_Content" width="3987" height="2053"/>
+        <image name="GLY1_Logo" width="1887" height="622"/>
+        <image name="GLY2_Content" width="3566" height="1351"/>
+        <image name="GLY2_Logo" width="1887" height="622"/>
+        <image name="GLY_BG" width="4270" height="3204"/>
+        <image name="GLY_edit" width="200" height="200"/>
+        <image name="GLY_home" width="200" height="200"/>
+        <image name="GLY_page button 1" width="170" height="170"/>
+        <image name="GLY_page button 2" width="170" height="170"/>
+        <image name="GLY_reference" width="200" height="200"/>
+    </resources>
+</document>

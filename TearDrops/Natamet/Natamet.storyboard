@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nata View Controller-->
+        <scene sceneID="DpK-tK-CJo">
+            <objects>
+                <viewController storyboardIdentifier="NataViewController" id="X9J-td-hbN" customClass="NataViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="USe-g5-7dG"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAn-Bt-NI0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ri-WQ-ZJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NAT_BG" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Xh-4Hn">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NAT1_Content" translatesAutoresizingMaskIntoConstraints="NO" id="PkO-QF-npW">
+                                <rect key="frame" x="20" y="236" width="984" height="492"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="gJn-Hb-br4">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2z-2u-OxK">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EK4-Pa-KQU"/>
+                                            <constraint firstAttribute="width" constant="50" id="Wre-Mf-g5E"/>
+                                        </constraints>
+                                        <state key="normal" image="NAT__home_icon"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="X9J-td-hbN" eventType="touchUpInside" id="aWX-9y-QQa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-1O-HXU">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="aGj-Si-EKm"/>
+                                            <constraint firstAttribute="height" constant="50" id="gik-7Y-awS"/>
+                                        </constraints>
+                                        <state key="normal" image="NAT__marker_icon"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="X9J-td-hbN" eventType="touchUpInside" id="onp-IH-7oS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQc-Lr-URf">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0u6-3r-hnJ"/>
+                                            <constraint firstAttribute="width" constant="50" id="rGM-jM-LJd"/>
+                                        </constraints>
+                                        <state key="normal" image="NAT_reference_icon"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="X9J-td-hbN" eventType="touchUpInside" id="QxL-zz-TR9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nal-zk-KuJ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rEI-J1-FTs">
+                                <rect key="frame" x="964" y="29" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-s0-27x">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fyF-hV-sFb"/>
+                                            <constraint firstAttribute="width" constant="40" id="iCG-Vc-xbr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <state key="normal" title="01" backgroundImage="NAT_pageno_icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstAction:" destination="X9J-td-hbN" eventType="touchUpInside" id="Xyj-vV-X5L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NAT_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sr-0W-68N">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="kLd-fG-a0x"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Sr-0W-68N" firstAttribute="top" secondItem="USe-g5-7dG" secondAttribute="bottom" constant="39" id="5pD-cb-zAR"/>
+                            <constraint firstItem="u4j-Xh-4Hn" firstAttribute="height" secondItem="3Ri-WQ-ZJ4" secondAttribute="height" id="Abw-bh-vnv"/>
+                            <constraint firstAttribute="trailing" secondItem="5Sr-0W-68N" secondAttribute="trailing" constant="243" id="Hie-Dw-qUn"/>
+                            <constraint firstItem="u4j-Xh-4Hn" firstAttribute="width" secondItem="3Ri-WQ-ZJ4" secondAttribute="width" id="IED-Yl-26w"/>
+                            <constraint firstItem="5Sr-0W-68N" firstAttribute="centerX" secondItem="3Ri-WQ-ZJ4" secondAttribute="centerX" id="K4x-q7-QPp"/>
+                            <constraint firstItem="gJn-Hb-br4" firstAttribute="top" secondItem="3Ri-WQ-ZJ4" secondAttribute="top" constant="10" id="Q8G-N9-uaC"/>
+                            <constraint firstItem="gJn-Hb-br4" firstAttribute="leading" secondItem="3Ri-WQ-ZJ4" secondAttribute="leading" constant="10" id="SNj-BL-BEj"/>
+                            <constraint firstAttribute="trailing" secondItem="rEI-J1-FTs" secondAttribute="trailing" constant="20" id="Uqp-TP-I2u"/>
+                            <constraint firstItem="u4j-Xh-4Hn" firstAttribute="centerY" secondItem="3Ri-WQ-ZJ4" secondAttribute="centerY" id="WZ0-tq-hbY"/>
+                            <constraint firstItem="PkO-QF-npW" firstAttribute="leading" secondItem="3Ri-WQ-ZJ4" secondAttribute="leading" constant="20" id="Ya3-y2-aRn"/>
+                            <constraint firstItem="rEI-J1-FTs" firstAttribute="top" secondItem="USe-g5-7dG" secondAttribute="bottom" constant="9" id="ZKH-gp-prW"/>
+                            <constraint firstItem="PkO-QF-npW" firstAttribute="top" secondItem="5Sr-0W-68N" secondAttribute="bottom" id="duy-wW-wcV"/>
+                            <constraint firstAttribute="trailing" secondItem="PkO-QF-npW" secondAttribute="trailing" constant="20" id="gUK-GO-epy"/>
+                            <constraint firstItem="GAn-Bt-NI0" firstAttribute="top" secondItem="PkO-QF-npW" secondAttribute="bottom" constant="40" id="jBl-p7-Tpo"/>
+                            <constraint firstItem="5Sr-0W-68N" firstAttribute="leading" secondItem="gJn-Hb-br4" secondAttribute="trailing" constant="61" id="plG-s3-bQa"/>
+                            <constraint firstItem="u4j-Xh-4Hn" firstAttribute="centerX" secondItem="3Ri-WQ-ZJ4" secondAttribute="centerX" id="xx0-my-5ZZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IlV-W3-Qmy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1UD-2e-m5e"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="PkO-QF-npW" id="eZJ-92-8Vn"/>
+                        <outlet property="logoImage" destination="5Sr-0W-68N" id="lvq-dK-AUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYn-9c-YcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8359374999995" y="128.90625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8wK-RC-TUA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6hH-kL-aAy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1QY-mn-dEI">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X9J-td-hbN" kind="relationship" relationship="rootViewController" id="EYW-JM-bxI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGw-YZ-vqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932.6171875" y="128.90625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NAT1_Content" width="3093" height="2056"/>
+        <image name="NAT_BG" width="4270" height="3204"/>
+        <image name="NAT_Logo" width="2096" height="520"/>
+        <image name="NAT__home_icon" width="200" height="200"/>
+        <image name="NAT__marker_icon" width="200" height="200"/>
+        <image name="NAT_pageno_icon" width="170" height="170"/>
+        <image name="NAT_reference_icon" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BrimoP View Controller-->
+        <scene sceneID="pKe-DJ-7YW">
+            <objects>
+                <viewController storyboardIdentifier="BrimoPViewController" id="rcP-Dj-wNS" customClass="BrimoPViewController" customModule="TearDrops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jl-kY-eeS"/>
+                        <viewControllerLayoutGuide type="bottom" id="sWb-s7-8Nj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mGZ-NI-8Rt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BRP_BG" translatesAutoresizingMaskIntoConstraints="NO" id="vKL-jp-8nT">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BRP_Content" translatesAutoresizingMaskIntoConstraints="NO" id="a7S-Xr-v9q">
+                                <rect key="frame" x="108" y="271" width="909" height="475"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="BSR-Zs-Nmp">
+                                <rect key="frame" x="10" y="10" width="172" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-Dm-HUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HPm-W8-hzX"/>
+                                            <constraint firstAttribute="width" constant="50" id="wwE-bG-IHS"/>
+                                        </constraints>
+                                        <state key="normal" image="BLS_Home_icon"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="rcP-Dj-wNS" eventType="touchUpInside" id="GN5-OA-hn0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-ax-xkf">
+                                        <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="f83-rm-RCC"/>
+                                            <constraint firstAttribute="width" constant="50" id="vWL-aK-MoH"/>
+                                        </constraints>
+                                        <state key="normal" image="BLS_Marker_icon"/>
+                                        <connections>
+                                            <action selector="editAction:" destination="rcP-Dj-wNS" eventType="touchUpInside" id="rzl-Qg-KWA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7p-Ld-by9">
+                                        <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YSa-7Y-J05"/>
+                                            <constraint firstAttribute="width" constant="50" id="jcR-sf-o3z"/>
+                                        </constraints>
+                                        <state key="normal" image="BLS_Reference_icon"/>
+                                        <connections>
+                                            <action selector="referenceAction:" destination="rcP-Dj-wNS" eventType="touchUpInside" id="NMW-Eg-XqG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ryc-NX-BVg"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BRP_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-ZL-0Kh">
+                                <rect key="frame" x="243" y="59" width="538" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="6py-aA-bvs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BSR-Zs-Nmp" firstAttribute="top" secondItem="mGZ-NI-8Rt" secondAttribute="top" constant="10" id="2J5-9I-Ixj"/>
+                            <constraint firstItem="BSR-Zs-Nmp" firstAttribute="leading" secondItem="mGZ-NI-8Rt" secondAttribute="leading" constant="10" id="56c-o9-pbs"/>
+                            <constraint firstItem="ZCD-ZL-0Kh" firstAttribute="centerX" secondItem="mGZ-NI-8Rt" secondAttribute="centerX" id="7O7-oN-qzN"/>
+                            <constraint firstItem="vKL-jp-8nT" firstAttribute="width" secondItem="mGZ-NI-8Rt" secondAttribute="width" id="7v5-YO-xH5"/>
+                            <constraint firstAttribute="trailing" secondItem="a7S-Xr-v9q" secondAttribute="trailing" constant="7" id="DbT-Rq-Jjz"/>
+                            <constraint firstItem="a7S-Xr-v9q" firstAttribute="leading" secondItem="mGZ-NI-8Rt" secondAttribute="leading" constant="108" id="G7L-gi-PjG"/>
+                            <constraint firstItem="ZCD-ZL-0Kh" firstAttribute="leading" secondItem="BSR-Zs-Nmp" secondAttribute="trailing" constant="61" id="OjT-dl-PIi"/>
+                            <constraint firstItem="vKL-jp-8nT" firstAttribute="height" secondItem="mGZ-NI-8Rt" secondAttribute="height" id="dkO-lR-IN8"/>
+                            <constraint firstItem="sWb-s7-8Nj" firstAttribute="top" secondItem="a7S-Xr-v9q" secondAttribute="bottom" constant="22" id="hDB-Ju-EyZ"/>
+                            <constraint firstItem="a7S-Xr-v9q" firstAttribute="top" secondItem="ZCD-ZL-0Kh" secondAttribute="bottom" constant="35" id="ifc-sw-VXS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZCD-ZL-0Kh" secondAttribute="trailing" constant="243" id="lBc-JW-hpN"/>
+                            <constraint firstItem="vKL-jp-8nT" firstAttribute="centerX" secondItem="mGZ-NI-8Rt" secondAttribute="centerX" id="mbG-x4-wtd"/>
+                            <constraint firstItem="vKL-jp-8nT" firstAttribute="centerY" secondItem="mGZ-NI-8Rt" secondAttribute="centerY" id="pse-MU-DWl"/>
+                            <constraint firstItem="ZCD-ZL-0Kh" firstAttribute="top" secondItem="4Jl-kY-eeS" secondAttribute="bottom" constant="39" id="zLT-dn-nHY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PwY-2H-HL1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V2I-mq-HR2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentImage" destination="a7S-Xr-v9q" id="Kaq-uP-nCk"/>
+                        <outlet property="logoImage" destination="ZCD-ZL-0Kh" id="2oC-2Z-Nc2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSs-s6-mLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8359374999995" y="128.90625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xsU-aO-523">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3MW-iD-aUC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="voG-7J-gYl">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rcP-Dj-wNS" kind="relationship" relationship="rootViewController" id="lkN-8h-5fE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsI-Pc-CZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932.6171875" y="128.90625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BLS_Home_icon" width="200" height="200"/>
+        <image name="BLS_Marker_icon" width="200" height="200"/>
+        <image name="BLS_Reference_icon" width="200" height="200"/>
+        <image name="BRP_BG" width="4270" height="3204"/>
+        <image name="BRP_Content" width="3395" height="1828"/>
+        <image name="BRP_Logo" width="2101" height="629"/>
+    </resources>
+</document>
