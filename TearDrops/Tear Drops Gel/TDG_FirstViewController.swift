@@ -10,8 +10,8 @@ import UIKit
 import AVKit
 class TDG_FirstViewController: UIViewController,PenviewDelegate {
 let playerController = AVPlayerViewController()
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var content: UIImageView!
+    
+    @IBOutlet weak var view0: UIView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view3: UIView!
@@ -62,18 +62,20 @@ let playerController = AVPlayerViewController()
     override func viewWillAppear(_ animated: Bool) {
         googleAnalyticsTrackingWith(trackingName: "Tear Drops Computer Vision Syndrome DED Symptoms")
         
-        let rect : CGRect = CGRect.init(x: self.view.center.x, y: 113, width: 0, height: 0)
-        let prevRect = self.logo.frame
-        self.logo.frame = rect
-        
+        view0.alpha = 1
         view1.alpha = 1
         view2.alpha = 1
         view3.alpha = 1
         view4.alpha = 1
         view5.alpha = 1
         
-        UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseIn, animations: {
-            self.logo.frame = prevRect
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(animateViews), userInfo: nil, repeats: false)
+    }
+    
+    @objc func animateViews() {
+        
+        UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseIn, animations: {
+            self.view0.alpha = 0
         }) { (finished:Bool) in
             UIView.animate(withDuration: 0.7, delay: 0.1, options: .curveEaseIn, animations: {
                 self.view1.alpha = 0
